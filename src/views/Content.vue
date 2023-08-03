@@ -62,12 +62,12 @@ window.onclick = (event) => {
 }
 
 
-const baseUrl = '/src/assets/Image House/Areafonthome/';
-const baseUrl2 = '/src/assets/Image House/FontRoom/';
-const baseUrl3 = '/src/assets/Image House/BackRoom/';
-const baseUrl4 = '/src/assets/Image House/Centerhome/';
-const baseUrl5 = '/src/assets/Image House/BathRoom/';
-const baseUrl6 = '/src/assets/Image House/RoomCoking/';
+const baseUrl = './src/assets/Image House/Areafonthome/';
+const baseUrl2 = './src/assets/Image House/FontRoom/';
+const baseUrl3 = './src/assets/Image House/BackRoom/';
+const baseUrl4 = './src/assets/Image House/Centerhome/';
+const baseUrl5 = './src/assets/Image House/BathRoom/';
+const baseUrl6 = './src/assets/Image House/RoomCoking/';
 const getImgUrl = (i: number) => {
   return `${baseUrl}${i + 1}.jpg`;
 };
