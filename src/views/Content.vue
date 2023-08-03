@@ -50,7 +50,6 @@ import { ref, provide } from "vue";
 import '../views/Navbar.css'
 import { reveal, reveal2 } from './Contentjs'
 import Navbar from '../components/Navbar.vue'
-//import SectionInformation from '../components/SectionInformatio.vue'
 
 
 //Element จะค่่อยๆ โชว์ให้เห็น
