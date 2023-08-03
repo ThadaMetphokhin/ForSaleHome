@@ -62,7 +62,7 @@ window.onclick = (event) => {
 }
 
 
-const baseUrl = '../../public/ImageHouse/Areafonthome/';
+const baseUrl = './src/assets/font';
 const baseUrl2 = '../../public/ImageHouse/FontRoom/';
 const baseUrl3 = '../../public/ImageHouse/BackRoom/';
 const baseUrl4 = '../../public/ImageHouse/Centerhome/';
