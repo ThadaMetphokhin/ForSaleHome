@@ -87,8 +87,8 @@ const getImgUrl5 = (i: number) => {
   return `${baseUrl6}${i + 1}.jpg`;
 };
 const item1 = ref([
-  { id: 1, name: 'หน้าบ้าน', Idele: 'Fronthome', data: getImgUrl,color:'background-color: aquamarine; margin-top:-1.4rem;' },
-  { id: 2, name: 'ห้องนอน 1', Idele: 'Room1', data: getImgUrl1,color:'background-color: #333; margin-top:-1.4rem; color:black;' },
+  { id: 1, name: 'หน้าบ้าน', Idele: 'Fronthome', data: getImgUrl,color:'background-color: aquamarine; margin-top:-1.4rem;',indeximg:4 },
+  { id: 2, name: 'ห้องนอน 1', Idele: 'Room1', data: getImgUrl1,color:'background-color: #333; margin-top:-1.4rem; color:black;',indeximg:3},
   { id: 3, name: 'ห้องนอน 2', Idele: 'Room2', data: getImgUrl2 ,color:'background-color: aquamarine; margin-top:-1.4rem;'},
   { id: 4, name: 'โถงกลางบ้าน', Idele: 'CenterRoomhome', data: getImgUrl3,color:'background-color: #333; margin-top:-1.4rem; color:black;' },
   { id: 5, name: 'ห้องน้ำในตัวบ้าน', Idele: 'BathRoominhome', data: getImgUrl4,color:'background-color: aquamarine; margin-top:-1.4rem;' },
