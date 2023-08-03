@@ -1,6 +1,7 @@
 
 <template>
   <Navbar />
+
   <br>
   <br>
   <br>
@@ -8,25 +9,10 @@
   <img src="../assets/Banner/Banner.png" style="width: 100%;" />
   <div style="width: 100%;">
     <a-layout-content>
-      <a-carousel arrows dots-class="slick-dots slick-thumb">
-        <img src="../../public/ImageHouse/Areafonthome/1.jpg"/>
-      </a-carousel>
+      <SectionInformation v-for="(items, index) in item1 " :key="index" :items="items" />
     </a-layout-content>
   </div>
-  <div style="width: 100%;">
-    <a-layout-content>
-      <a-carousel arrows dots-class="slick-dots slick-thumb">
-        <template #customPaging="props">
-          <a>
-            <img :src="getImgUrl(props.i)" />
-          </a>
-        </template>
-        <div v-for="item in 3" :key="item">
-          <img :src="getImgUrl1(item - 1)" />
-        </div>
-      </a-carousel>
-    </a-layout-content>
-  </div>
+
   <a class="scrollup" @click="movetoTop" id="scrollupshow">
     <fa icon="fa-solid fa-circle-arrow-up" size="2xl" bounce />
   </a>
@@ -34,15 +20,16 @@
 <style scoped>
 /* For demo */
 @import url('./style.css');
-@import url('./Antdesign.css');
 </style>
 
 <script  lang="ts">
 import { defineComponent } from 'vue';
 import { ref, provide } from "vue";
 import '../views/Navbar.css'
+
 import { reveal, reveal2 } from './Contentjs'
 import Navbar from '../components/Navbar.vue'
+import SectionInformation from '../components/SectionInformatio.vue'
 
 
 //Element จะค่่อยๆ โชว์ให้เห็น
@@ -75,33 +62,46 @@ window.onclick = (event) => {
 }
 
 
-const baseUrl = '../../public/ImageHouse/Areafonthome/';
-const baseUrl2 = '../../public/ImageHouse/FontRoom/';
-const baseUrl3 = '../../public/ImageHouse/BackRoom/';
-const baseUrl4 = '../../public/ImageHouse/Centerhome/';
-const baseUrl5 = '../../public/ImageHouse/BathRoom/';
-const baseUrl6 = '../../public/ImageHouse/RoomCoking/';
+const baseUrl = '/ImageHouse/Areafonthome/';
+const baseUrl2 = '/ImageHouse/FontRoom/';
+const baseUrl3 = '/ImageHouse/BackRoom/';
+const baseUrl4 = '/ImageHouse/Centerhome/';
+const baseUrl5 = '/ImageHouse/BathRoom/';
+const baseUrl6 = '/ImageHouse/RoomCoking/';
+const getImgUrl = (i: number) => {
+  return `${baseUrl}${i + 1}.jpg`;
+};
+const getImgUrl1 = (i: number) => {
+  return `${baseUrl2}${i + 1}.jpg`;
+};
+const getImgUrl2 = (i: number) => {
+  return `${baseUrl3}${i + 1}.jpg`;
+};
+const getImgUrl3 = (i: number) => {
+  return `${baseUrl4}${i + 1}.jpg`;
+};
+const getImgUrl4 = (i: number) => {
+  return `${baseUrl5}${i + 1}.jpg`;
+};
+const getImgUrl5 = (i: number) => {
+  return `${baseUrl6}${i + 1}.jpg`;
+};
+const item1 = ref([
+  { id: 1, name: 'หน้าบ้าน', Idele: 'Fronthome', data: getImgUrl,color:'background-color: aquamarine; margin-top:-1.4rem;' },
+  { id: 2, name: 'ห้องนอน 1', Idele: 'Room1', data: getImgUrl1,color:'background-color: #333; margin-top:-1.4rem; color:black;' },
+  { id: 3, name: 'ห้องนอน 2', Idele: 'Room2', data: getImgUrl2 ,color:'background-color: aquamarine; margin-top:-1.4rem;'},
+  { id: 4, name: 'โถงกลางบ้าน', Idele: 'CenterRoomhome', data: getImgUrl3,color:'background-color: #333; margin-top:-1.4rem; color:black;' },
+  { id: 5, name: 'ห้องน้ำในตัวบ้าน', Idele: 'BathRoominhome', data: getImgUrl4,color:'background-color: aquamarine; margin-top:-1.4rem;' },
+  { id: 6, name: 'ห้องครัว', Idele: 'RoomCooking', data: getImgUrl5,color:'background-color: #333; margin-top:-1.4rem; color:black;' },
+]);
 export default defineComponent({
+  components: {
+    Navbar,
+    SectionInformation,
+  },
   setup() {
-    const getImgUrl = (i: number) => {
-      return `${baseUrl}${i + 1}.jpg`;
-    };
-    const getImgUrl1 = (i: number) => {
-      return `${baseUrl2}${i + 1}.jpg`;
-    };
-    const getImgUrl2 = (i: number) => {
-      return `${baseUrl3}${i + 1}.jpg`;
-    };
-    const getImgUrl3 = (i: number) => {
-      return `${baseUrl4}${i + 1}.jpg`;
-    };
-    const getImgUrl4 = (i: number) => {
-      return `${baseUrl5}${i + 1}.jpg`;
-    };
-    const getImgUrl5 = (i: number) => {
-      return `${baseUrl6}${i + 1}.jpg`;
-    };
     return {
+      item1,
       getImgUrl,
       getImgUrl1,
       getImgUrl2,
@@ -109,18 +109,15 @@ export default defineComponent({
       getImgUrl4,
       getImgUrl5,
     };
-  },
-  components: {
-    Navbar,
+
   },
   methods: {
     movetoTop() {
       window.scrollTo(0, 0)
     },
   },
+
 });
-
-
 
 
 
