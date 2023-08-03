@@ -9,14 +9,7 @@
   <div style="width: 100%;">
     <a-layout-content>
       <a-carousel arrows dots-class="slick-dots slick-thumb">
-        <template #customPaging="props">
-          <a>
-            <img :src="getImgUrl(props.i)" />
-          </a>
-        </template>
-        <div v-for="item in 4" :key="item">
-          <img :src="getImgUrl(item - 1)" />
-        </div>
+        <img src="../../public/ImageHouse/Areafonthome/1.jpg"/>
       </a-carousel>
     </a-layout-content>
   </div>
