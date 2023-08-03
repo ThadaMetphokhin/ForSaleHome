@@ -13,7 +13,7 @@
                     <img :src="items.data"/>
                 </a>
             </template>
-            <div v-for="item in items.data.lenght" :key="item">
+            <div v-for="item in items.indeximg" :key="item">
                 <a-image :src="items.data(item - 1)" />
             </div>
             
