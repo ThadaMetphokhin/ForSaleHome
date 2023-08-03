@@ -1,16 +1,16 @@
 <template>
     
-    <div :id="items.Idele" class="reveal" :style="items.color">
+    <div >
         <br>
         <div class="text">
-            <h1>{{ items.name }}</h1>   
+            <h1></h1>   
         </div>
         <a-carousel arrows dots-class="slick-dots slick-thumb">
             
             <template #customPaging="props">
                 
                 <a>
-                    <img :src="items.data(props.i)" />
+                    <img :src="getImgUrl(props.i)" />
                 </a>
             </template>
             <div v-for="item in 4" :key="item">
@@ -67,7 +67,33 @@
 }
 </style>
 <script  lang="ts">
-
+const baseUrl = './assets/font';
+const baseUrl2 = '../../public/ImageHouse/FontRoom/';
+const baseUrl3 = '../../public/ImageHouse/BackRoom/';
+const baseUrl4 = '../../public/ImageHouse/Centerhome/';
+const baseUrl5 = '../../public/ImageHouse/BathRoom/';
+const baseUrl6 = '../../public/ImageHouse/RoomCoking/';
+const getImgUrl = (i: number) => {
+  return `${baseUrl}${i + 1}.jpg`;
+};
+const getImgUrl1 = (i: number) => {
+  return `${baseUrl2}${i + 1}.jpg`;
+};
+const getImgUrl2 = (i: number) => {
+  return `${baseUrl3}${i + 1}.jpg`;
+};
+const getImgUrl3 = (i: number) => {
+  return `${baseUrl4}${i + 1}.jpg`;
+};
+const getImgUrl4 = (i: number) => {
+  return `${baseUrl5}${i + 1}.jpg`;
+};
+const getImgUrl5 = (i: number) => {
+  return `${baseUrl6}${i + 1}.jpg`;
+};
+export {
+    getImgUrl,
+}
 export default {
     props: {
         items: {
