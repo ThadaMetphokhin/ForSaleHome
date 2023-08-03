@@ -10,7 +10,7 @@
             <template #customPaging="props">
                 
                 <a>
-                    <img :src="items.data"/>
+                    <img :src="items.data(props)"/>
                 </a>
             </template>
             <div v-for="item in 4" :key="item">
