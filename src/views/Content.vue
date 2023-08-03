@@ -6,7 +6,7 @@
   <br>
   <br>
   <br>
-  <img src="./assets/Banner.PNG" style="width: 100%;" />
+  <img src="../assets/Banner.png" style="width: 100%;" />
   <div style="width: 100%;">
     <a-layout-content>
       <SectionInformation v-for="(items, index) in item1 " :key="index" :items="items" />
