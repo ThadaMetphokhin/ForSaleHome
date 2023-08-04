@@ -87,12 +87,59 @@ const getImgUrl5 = (i: number) => {
   return `${baseUrl6}${i + 1}.jpg`;
 };
 const item1 = ref([
-  { id: 1, name: 'หน้าบ้าน', Idele: 'Fronthome', data: getImgUrl,color:'background-color: aquamarine; margin-top:-1.4rem;',indeximg:4 },
-  { id: 2, name: 'ห้องนอน 1', Idele: 'Room1', data: getImgUrl1,color:'background-color: #333; margin-top:-1.4rem; color:black;',indeximg:3},
-  { id: 3, name: 'ห้องนอน 2', Idele: 'Room2', data: getImgUrl2 ,color:'background-color: aquamarine; margin-top:-1.4rem;',indeximg:2},
-  { id: 4, name: 'โถงกลางบ้าน', Idele: 'CenterRoomhome', data: getImgUrl3,color:'background-color: #333; margin-top:-1.4rem; color:black;',indeximg:2},
-  { id: 5, name: 'ห้องน้ำในตัวบ้าน', Idele: 'BathRoominhome', data: getImgUrl4,color:'background-color: aquamarine; margin-top:-1.4rem;',indeximg:2 },
-  { id: 6, name: 'ห้องครัว', Idele: 'RoomCooking', data: getImgUrl5,color:'background-color: #333; margin-top:-1.4rem; color:black;',indeximg:3 },
+  {
+    id: 1, 
+    name: 'หน้าบ้าน', 
+    Idele: 'Fronthome', 
+    data: getImgUrl, 
+    color: 'background-color: #3F4E55; margin-top:-1.4rem;', 
+    textstyle: 'border-radius: 2rem; text-align: center ;background-color: #A8DDB4; width: 15rem;margin-left: 6rem; ',
+    indeximg:4,
+  },
+{ 
+  id: 2, 
+  name: 'ห้องนอน 1', 
+  Idele: 'Room1', 
+  data: getImgUrl1, 
+  color: 'background-color: #DCBD28; margin-top:-1.4rem; color:white;',
+  textstyle: 'border-radius: 2rem; text-align: center ;background-color: #272647; width: 15rem;margin-left: 6rem; ',
+  indeximg: 3 },
+{ 
+  id: 3, 
+  name: 'ห้องนอน 2', 
+  Idele: 'Room2', 
+  data: getImgUrl2, 
+  color: 'background-color: #3F4E55; margin-top:-1.4rem;', 
+  textstyle: 'border-radius: 2rem; text-align: center ;background-color: #A8DDB4; width: 15rem;margin-left: 6rem; ',
+  indeximg: 2 
+},
+{ 
+  id: 4, 
+  name: 'โถงกลางบ้าน', 
+  Idele: 'CenterRoomhome', 
+  data: getImgUrl3, 
+  color: 'background-color: #DCBD28; margin-top:-1.4rem; color:white;', 
+  textstyle: 'border-radius: 2rem; text-align: center ;background-color: #272647; width: 15rem;margin-left: 6rem; ',
+  indeximg: 2 
+},
+{ 
+  id: 5, 
+  name: 'ห้องน้ำในตัวบ้าน', 
+  Idele: 'BathRoominhome', 
+  data: getImgUrl4, 
+  color: 'background-color: #3F4E55; margin-top:-1.4rem;', 
+  textstyle: 'border-radius: 2rem; text-align: center ;background-color: #A8DDB4; width: 15rem;margin-left: 6rem; ',
+  indeximg: 2 
+},
+{ 
+  id: 6, 
+  name: 'ห้องครัว', 
+  Idele: 'RoomCooking', 
+  data: getImgUrl5, 
+  color: 'background-color: #DCBD28; margin-top:-1.4rem; color:white;', 
+  textstyle: 'border-radius: 2rem; text-align: center ;background-color: #272647; width: 15rem;margin-left: 6rem; ',
+  indeximg: 3 
+},
 ]);
 export default defineComponent({
   components: {

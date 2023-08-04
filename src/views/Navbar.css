@@ -1,6 +1,6 @@
 .topnav {
     overflow: auto;
-    background-color: #333;
+    background-color: #ECFF00;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -24,7 +24,7 @@
 .topnav a {
     overflow: auto;
     float: left;
-    color: rgb(255, 255, 255);
+    color: #727A52;
     text-align: center;
     padding: 12px;
     text-decoration: none;
