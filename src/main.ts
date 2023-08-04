@@ -15,8 +15,15 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faUserSecret,faCircleArrowUp,faBars,faAngleDown } from '@fortawesome/free-solid-svg-icons'
-library.add(faUserSecret,faCircleArrowUp,faBars,faAngleDown)
+import { 
+    faUserSecret,
+    faCircleArrowUp,
+    faBars,
+    faAngleDown,
+    faPhoneVolume 
+} from '@fortawesome/free-solid-svg-icons'
+
+library.add(faUserSecret,faCircleArrowUp,faBars,faAngleDown,faPhoneVolume)
 
 const app = createApp(App)
 app.component('fa', FontAwesomeIcon)

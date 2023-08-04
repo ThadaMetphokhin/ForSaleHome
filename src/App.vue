@@ -9,9 +9,9 @@ import Content from './views/Content.vue'
   
 </template>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@300&display=swap');
 body{
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Kodchasan', sans-serif;
   margin: 0;
 }
 

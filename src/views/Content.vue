@@ -39,6 +39,9 @@
   <a class="scrollup" @click="movetoTop" id="scrollupshow">
     <fa icon="fa-solid fa-circle-arrow-up" size="2xl" bounce />
   </a>
+  <a class="phone" href="tel:0968071248">
+    <img width="40" src="/public/phone-call.png"/>
+  </a>
 </template>
 <style scoped>
 /* For demo */

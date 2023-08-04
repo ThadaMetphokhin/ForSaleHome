@@ -13,7 +13,7 @@
       </div>
 
       <a @click="movetoCenterRoomhome">โถงกลางบ้าน</a>
-      <a @click="movetoBathRoominhome">ห้องน้ำใฝนตัวบ้าน</a>
+      <a @click="movetoBathRoominhome">ห้องน้ำในตัวบ้าน</a>
       <a @click="movetoCookingRoom">ห้องครัว</a>
     </div>
     <a href="javascript:void(0);" class="icon" @click="myFunction">
