@@ -17,7 +17,7 @@
       <a @click="movetoCookingRoom">ห้องครัว</a>
     </div>
     <a href="javascript:void(0);" class="icon" @click="myFunction">
-      <fa icon="fa-solid fa-bars" />
+      <fa icon="fa-solid fa-bars" style="color: #031933;" />
     </a>
   </div>
 </template>

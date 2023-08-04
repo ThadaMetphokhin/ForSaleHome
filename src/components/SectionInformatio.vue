@@ -10,7 +10,7 @@
                 <template #customPaging="props">
 
                     <a>
-                        <img :src="items.data(props.i)" />
+                        <img  :src="items.data(props.i)" />
                     </a>
                 </template>
                 <div v-for="item in items.indeximg" :key="item">
@@ -48,6 +48,7 @@
 }
 
 .ant-carousel :deep(.slick-slide img) {
+    border-radius: 18px;
     border: 5px solid #fff;
     display: block;
     margin: auto;
@@ -68,6 +69,7 @@
 }
 
 .ant-carousel :deep(.slick-thumb li img) {
+    border-radius: 5px;
     width: 100%;
     height: 100%;
     filter: grayscale(100%);

@@ -3,7 +3,7 @@ img {
 }
 
 .el1{
-    background-color: #3F4E55; 
+    background-color: #F0EF6C; 
     margin-top:-1.4rem;
 }
 .textstyle{
@@ -38,6 +38,11 @@ img {
     position: fixed;
     right: 0.8rem;
     bottom: 6rem;
+}
+.line{
+    position: fixed;
+    right: 0.8rem;
+    bottom: 10rem;
 }
 
 .scrollup.active {
