@@ -126,8 +126,8 @@
     .topnav.responsive .icon {
         margin-top: 0;
         position: absolute;
-        right: 1rem;
-        top: 0.5rem;
+        right: 0rem;
+        top: 0rem;
     }
 
     .topnav.responsive .topnavright > a  {
