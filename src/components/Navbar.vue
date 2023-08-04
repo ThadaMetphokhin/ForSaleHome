@@ -1,6 +1,6 @@
 <template>
   <div class="topnav" id="myTopnav">
-    <a class="logo"><img src="../assets/iconweb/rent.png" /></a>
+    <img class="logo" src="../assets/iconweb/rent.png" />
     <div class="topnavright">
       <a @click="movetoFrontRoom">หน้าบ้าน</a>
       

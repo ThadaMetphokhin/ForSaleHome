@@ -123,6 +123,7 @@ img {
     opacity: 1;
 }
 
+
 @media screen and (min-width: 500px) {
     .reveal.active {
         transform: translateY(90px);

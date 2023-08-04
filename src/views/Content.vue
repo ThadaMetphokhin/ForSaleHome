@@ -94,7 +94,7 @@ const item1 = ref([
     Idele: 'Fronthome', 
     data: getImgUrl, 
     color: 'background-color: #3F4E55; margin-top:-1.4rem;', 
-    textstyle: 'border-radius: 2rem; text-align: center ;background-color: #A8DDB4; width: 15rem;margin-left: 6rem; ',
+    textstyle: 'border-radius: 2rem; text-align: center ;background-color: #A8DDB4;  ',
     indeximg:4,
   },
 { 
@@ -103,7 +103,7 @@ const item1 = ref([
   Idele: 'Room1', 
   data: getImgUrl1, 
   color: 'background-color: #DCBD28; margin-top:-1.4rem; color:white;',
-  textstyle: 'border-radius: 2rem; text-align: center ;background-color: #272647; width: 15rem;margin-left: 6rem; ',
+  textstyle: 'border-radius: 2rem; text-align: center ;background-color: #272647;',
   indeximg: 3 },
 { 
   id: 3, 
@@ -111,7 +111,7 @@ const item1 = ref([
   Idele: 'Room2', 
   data: getImgUrl2, 
   color: 'background-color: #3F4E55; margin-top:-1.4rem;', 
-  textstyle: 'border-radius: 2rem; text-align: center ;background-color: #A8DDB4; width: 15rem;margin-left: 6rem; ',
+  textstyle: 'border-radius: 2rem; text-align: center ;background-color: #A8DDB4;',
   indeximg: 2 
 },
 { 
@@ -120,7 +120,7 @@ const item1 = ref([
   Idele: 'CenterRoomhome', 
   data: getImgUrl3, 
   color: 'background-color: #DCBD28; margin-top:-1.4rem; color:white;', 
-  textstyle: 'border-radius: 2rem; text-align: center ;background-color: #272647; width: 15rem;margin-left: 6rem; ',
+  textstyle: 'border-radius: 2rem; text-align: center ;background-color: #272647;',
   indeximg: 2 
 },
 { 
@@ -129,7 +129,7 @@ const item1 = ref([
   Idele: 'BathRoominhome', 
   data: getImgUrl4, 
   color: 'background-color: #3F4E55; margin-top:-1.4rem;', 
-  textstyle: 'border-radius: 2rem; text-align: center ;background-color: #A8DDB4; width: 15rem;margin-left: 6rem; ',
+  textstyle: 'border-radius: 2rem; text-align: center ;background-color: #A8DDB4;',
   indeximg: 2 
 },
 { 
@@ -138,7 +138,7 @@ const item1 = ref([
   Idele: 'RoomCooking', 
   data: getImgUrl5, 
   color: 'background-color: #DCBD28; margin-top:-1.4rem; color:white;', 
-  textstyle: 'border-radius: 2rem; text-align: center ;background-color: #272647; width: 15rem;margin-left: 6rem; ',
+  textstyle: 'border-radius: 2rem; text-align: center ;background-color: #272647;',
   indeximg: 3 
 },
 ]);
