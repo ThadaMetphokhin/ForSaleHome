@@ -8,6 +8,8 @@
   <br>
   <img src="../assets/Banner/Banner.png" style="width: 100%;" />
   <br>
+  <br>
+  <br>
   <div style="width: 100%;">
     <a-layout-content>
       <SectionInformation v-for="(items, index) in item1 " :key="index" :items="items" />
@@ -31,6 +33,7 @@ import '../views/Navbar.css'
 import { reveal, reveal2 } from './Contentjs'
 import Navbar from '../components/Navbar.vue'
 import SectionInformation from '../components/SectionInformatio.vue'
+
 
 
 //Element จะค่่อยๆ โชว์ให้เห็น
@@ -93,7 +96,8 @@ const item1 = ref([
     name: 'หน้าบ้าน', 
     Idele: 'Fronthome', 
     data: getImgUrl, 
-    color: 'background-color: #3F4E55; margin-top:-1.4rem;', 
+    op:'reveal active',
+    color: 'background-color: #3F4E55; margin-top:-1.4rem; ', 
     textstyle: 'border-radius: 2rem; text-align: center ;background-color: #A8DDB4;  ',
     indeximg:4,
   },

@@ -1,35 +1,36 @@
 <template>
-    
-    <div :id="items.Idele" class="reveal" :style="items.color">
-        <br>
-        <div  :style="items.textstyle" id="setT">
-            <h1>{{ items.name }}</h1>   
-        </div>
-        <a-carousel arrows dots-class="slick-dots slick-thumb">
-            
-            <template #customPaging="props">
-                
-                <a>
-                    <img :src="items.data(props.i)"/>
-                </a>
-            </template>
-            <div v-for="item in items.indeximg" :key="item">
-                <a-image :src="items.data(item - 1)" />
+    <section class="reveal" :class="items.op" :id="items.Idele">
+        <div  :style="items.color">
+            <br>
+            <div :style="items.textstyle" id="setT">
+                <h1>{{ items.name }}</h1>
             </div>
-            
-        </a-carousel>
-        <br>
-    </div>
+            <a-carousel arrows dots-class="slick-dots slick-thumb">
+
+                <template #customPaging="props">
+
+                    <a>
+                        <img :src="items.data(props.i)" />
+                    </a>
+                </template>
+                <div v-for="item in items.indeximg" :key="item">
+                    <a-image :src="items.data(item - 1)" />
+                </div>
+
+            </a-carousel>
+            <br>
+        </div>
+    </section>
 </template>
 <style scoped>
-
 @media screen and (max-width:400px) {
-    div[style]#setT{
+    div[style]#setT {
         font-size: 0.5rem;
         width: 8rem;
         margin-left: 1rem;
     }
 }
+
 .ant-carousel :deep(.slick-dots) {
     position: relative;
     height: auto;
@@ -68,7 +69,6 @@
 }
 </style>
 <script  lang="ts">
-
 export default {
     props: {
         items: {

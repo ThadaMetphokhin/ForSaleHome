@@ -113,20 +113,30 @@ img {
 
 .reveal {
     position: relative;
-    transform: translateY(150px);
+    transform: translateY(100px);
     opacity: 0;
     transition: 0.5s all ease;
+}
+@keyframes example2 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .reveal.active {
     transform: translateY(0px);
     opacity: 1;
+    animation-name: example2;
+    animation-duration: 1s;
 }
 
-
-@media screen and (min-width: 500px) {
-    .reveal.active {
-        transform: translateY(90px);
+@media screen and (min-width:400) {
+    #Fonthome{
         opacity: 1;
     }
 }
+
