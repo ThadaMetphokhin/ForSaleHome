@@ -11,7 +11,7 @@
   <br>
   <br>
   <div style="width: 100%;">
-    <a-layout-content>\
+    <a-layout-content>
       <div class="el1" id="Fronthome">
         <br>
         <div class="textstyle" id="setT">
@@ -54,44 +54,17 @@
 
 <script  lang="ts">
 import { defineComponent } from 'vue';
-import { ref, provide } from "vue";
+import { ref } from "vue";
 import '../views/Navbar.css'
 
 import { reveal, reveal2 } from './Contentjs'
 import Navbar from '../components/Navbar.vue'
 import SectionInformation from '../components/SectionInformatio.vue'
 
-
 //Element จะค่่อยๆ โชว์ให้เห็น
 window.addEventListener("scroll", reveal);
 
 window.addEventListener("scroll", reveal2)
-// Close the dropdown if the user clicks outside of it
-window.onclick = (event) => {
-  if (!(event.target as HTMLInputElement).matches('.icon')) {
-    var dropdowns = document.getElementsByClassName("topnav");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('responsive')) {
-        openDropdown.classList.remove('responsive');
-      }
-    }
-  }
-}
-window.onclick = (event) => {
-  if (!(event.target as HTMLInputElement).matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
 
 const baseUrl = '/ImageHouse/Areafonthome/';
 const baseUrl2 = '/ImageHouse/FontRoom/';
@@ -165,12 +138,15 @@ const item1 = ref([
     indeximg: 3
   },
 ]);
+
+
 export default defineComponent({
   components: {
     Navbar,
     SectionInformation,
   },
   setup() {
+    
     return {
       item1,
       getImgUrl,
@@ -192,38 +168,5 @@ export default defineComponent({
 
 
 
-export function movetoFrontRoom() {
-  var el = document.getElementById('Fronthome')
-  el?.scrollIntoView({ behavior: 'smooth' })
-}
 
-export function movetoRoom1() {
-  var el = document.getElementById('Room1')
-  el?.scrollIntoView({ behavior: 'smooth' })
-}
-export function movetoRoom2() {
-  var el = document.getElementById('Room2')
-  el?.scrollIntoView({ behavior: 'smooth' })
-}
-export function movetoCenterRoomhome() {
-  var el = document.getElementById('CenterRoomhome')
-  el?.scrollIntoView({ behavior: 'smooth' })
-}
-export function movetoBathRoominhome() {
-  var el = document.getElementById('BathRoominhome')
-  el?.scrollIntoView({ behavior: 'smooth' })
-}
-export function movetoCookingRoom() {
-  var el = document.getElementById('RoomCooking')
-  el?.scrollIntoView({ behavior: 'smooth' })
-}
-export function myFunction() {
-  var x = document.getElementById("myTopnav");
-  console.log()
-  if (x?.classList.toString() === "topnav") {
-    x?.classList.add("responsive")
-  } else {
-    x?.classList.remove("responsive")
-  }
-}
 </script>
