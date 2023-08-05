@@ -14,7 +14,8 @@ span.p-menuitem-text {
 }
 
 div.p-menubar {
-  background: #6D9E87;
+  border-radius: 0px;
+  opacity: 0.91;
 }
 
 ul.p-menubar-root-list {

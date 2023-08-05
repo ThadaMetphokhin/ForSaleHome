@@ -1,6 +1,28 @@
 img {
     vertical-align: middle;
 }
+.box{
+    position: relative;
+    background-color: #A8DDB4;
+    width: 50%;
+}
+.address{
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.Contracticon{
+    opacity: 0.9;
+    border-radius: 5px;
+    position: fixed;
+    right: -0.5rem;
+    bottom: 5.5rem;
+    background-color: rgb(255, 255, 255);
+    width: 4rem;
+    height: 8rem;
+}
+
 
 .el1{
     background-color: #F0EF6C; 
@@ -16,6 +38,13 @@ img {
     .textstyle {
         font-size: 0.5rem;
         width: 8rem;
+        margin-left: 1rem;
+    }
+}
+@media screen and (min-width:400px) {
+    .textstyle {
+        font-size: 0.8rem;
+        width: 9rem;
         margin-left: 1rem;
     }
 }
@@ -36,12 +65,12 @@ img {
 
 .phone{
     position: fixed;
-    right: 0.8rem;
+    right: 0.5rem;
     bottom: 6rem;
 }
 .line{
     position: fixed;
-    right: 0.8rem;
+    right: 0.5rem;
     bottom: 10rem;
 }
 

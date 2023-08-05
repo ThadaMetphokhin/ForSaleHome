@@ -31,6 +31,13 @@
         margin-left: 1rem;
     }
 }
+@media screen and (min-width:400px) {
+    div[style]#setT {
+        font-size: 0.8rem;
+        width: 14rem;
+        margin-left: 1rem;
+    }
+}
 .reveal {
     position: relative;
     transform: translateY(150px);
