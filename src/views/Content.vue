@@ -166,6 +166,30 @@ export default defineComponent({
 
 });
 
+export function movetoFronthome(){
+  const fonthome = document.getElementById('Fronthome')
+  fonthome?.scrollIntoView()
+}
+export function movetoRoom1(){
+  const Room1 = document.getElementById('Room1')
+  Room1?.scrollIntoView()
+}
+export function movetoRoom2(){
+  const Room2 = document.getElementById('Room2')
+  Room2?.scrollIntoView()
+}
+export function movetoCenterhome(){
+  const Centerhome = document.getElementById('CenterRoomhome')
+  Centerhome?.scrollIntoView()
+}
+export function movetoBathRoominhome(){
+  const BathRoominhome = document.getElementById('BathRoominhome')
+  BathRoominhome?.scrollIntoView()
+}
+export function movetoCookingRoom(){
+  const RoomCooking = document.getElementById('RoomCooking')
+  RoomCooking?.scrollIntoView()
+}
 
 
 

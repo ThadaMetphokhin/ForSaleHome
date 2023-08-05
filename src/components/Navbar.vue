@@ -31,18 +31,25 @@ a.p-menubar-button {
 import Menubar from 'primevue/menubar';
 import { ref } from 'vue'
 
+import { 
+  movetoFronthome,
+  movetoRoom1,
+  movetoRoom2,
+  movetoCenterhome,
+  movetoBathRoominhome,
+  movetoCookingRoom
+} from '../views/Content.vue'
 
-const fonthome = document.getElementById('Fronthome')
-const Room1 = document.getElementById('Room1')
-const Room2 = document.getElementById('Room2')
-const Centerinhome = document.getElementById('CenterRoomhome')
-const BathRoominhome = document.getElementById('BathRoominhome')
-const RoomCooking = document.getElementById('RoomCooking')
+
+
+
+
+
 const items = ref([
   {
     label: 'หน้าบ้าน',
     icon: 'pi pi-fw pi-file',
-    command: () => fonthome?.scrollIntoView()
+    command: () => movetoFronthome()
   },
   {
     label: 'ห้องนอน',
@@ -51,29 +58,29 @@ const items = ref([
       {
         label: 'ห้องนอน 1',
         icon: 'pi pi-fw pi-align-left',
-        command: () => Room1?.scrollIntoView()
+        command: () => movetoRoom1()
       },
       {
         label: 'ห้องนอน 2',
         icon: 'pi pi-fw pi-align-right',
-        command: () => Room2?.scrollIntoView()
+        command: () => movetoRoom1()
       },
     ]
   },
   {
     label: 'โถงกลางบ้าน',
     icon: 'pi pi-fw pi-file',
-    command: () => Centerinhome?.scrollIntoView()
+    command: () => movetoCenterhome()
   },
   {
     label: 'ห้องน้ำในตัวบ้าน',
     icon: 'pi pi-fw pi-file',
-    command: () => BathRoominhome?.scrollIntoView()
+    command: () => movetoBathRoominhome()
   },
   {
     label: 'ห้องครัว',
     icon: 'pi pi-fw pi-file',
-    command: () => RoomCooking?.scrollIntoView()
+    command: () => movetoCookingRoom()
   },
 
 ]);
