@@ -14,7 +14,7 @@
     <div class="address">
       <div class="box">
         <p>รายละเอียดอื่นๆ</p>
-        <hr style="width: 25rem; border-top: 1px solid rgb(90, 90, 90); border-radius: 10px;">
+        <hr style="width: 80%; border-top: 0.3rem solid rgb(90, 90, 90); border-radius: 10px;">
         <p>-</p>
       </div>
 
