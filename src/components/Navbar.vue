@@ -2,7 +2,7 @@
   <div class="card relative z-2 Navbar">
     <Menubar :model="items">
       <template #start>
-        <img alt="logo" src="/public/iconweb/rent.png" height="40" class="mr-2" />
+        <img alt="logo" src="/public/for-sale.png" height="40" class="mr-2" />
       </template>
     </Menubar>
   </div>
@@ -38,7 +38,8 @@ import {
   movetoRoom2,
   movetoCenterhome,
   movetoBathRoominhome,
-  movetoCookingRoom
+  movetoCookingRoom,
+  movetoMaps
 } from '../views/Content.vue'
 
 
@@ -82,6 +83,11 @@ const items = ref([
     label: 'ห้องครัว',
     icon: 'pi pi-fw pi-file',
     command: () => movetoCookingRoom()
+  },
+  {
+    label: 'แผนที่',
+    icon: 'pi pi-fw pi-file',
+    command: () => movetoMaps()
   },
 
 ]);

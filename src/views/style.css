@@ -1,12 +1,25 @@
 img {
     vertical-align: middle;
 }
+
+.Maps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Maps iframe{
+    border-radius: 10px;
+    width: 90%;
+    height: 40rem;
+}
 .box{
+    border-radius: 10px;
     position: relative;
     background-color: #A8DDB4;
     width: 50%;
 }
 .address{
+    
     display:flex;
     text-align: center;
     align-items: center;

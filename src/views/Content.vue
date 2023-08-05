@@ -13,9 +13,9 @@
   <div style="width: 100%;">
     <div class="address">
       <div class="box">
-        <p>รายละเอียด</p>
-        <hr>
-        <p>146 หมู่ 5 ต.ห้วยข้าวก่ำ อ.จุน จ.พะเยา</p>
+        <p>รายละเอียดอื่นๆ</p>
+        <hr style="width: 25rem; border-top: 1px solid rgb(90, 90, 90); border-radius: 10px;">
+        <p>-</p>
       </div>
 
 
@@ -42,6 +42,17 @@
         <br>
       </div>
       <SectionInformation v-for="(items, index) in item1 " :key="index" :items="items" />
+      <br>
+      <div style="margin-left: 1rem;font-weight: bold;">
+        <p>แผนที่</p>
+      </div>
+      <div class="Maps" id="Maps">
+        
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!4v1691229639588!6m8!1m7!1ssXykm0Nlc3sV1cxv-RK7Ew!2m2!1d19.34101253260362!2d100.1278765392856!3f184.00762339263792!4f-6.17299409900582!5f0.7820865974627469"
+           style="border:0;" allowfullscreen="true" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </a-layout-content>
   </div>
 
@@ -222,6 +233,10 @@ export function movetoBathRoominhome() {
 export function movetoCookingRoom() {
   const RoomCooking = document.getElementById('RoomCooking')
   RoomCooking?.scrollIntoView()
+}
+export function movetoMaps(){
+  const Maps = document.getElementById('Maps')
+  Maps?.scrollIntoView()
 }
 
 
