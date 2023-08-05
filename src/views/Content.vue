@@ -5,7 +5,7 @@
   <br>
   <br>
   <br>
-  <img src="../assets/Banner/Banner.png" style="width: 100%;" />
+  <img src="../assets/Banner/Banner.png" style="width: 100%;" alt="Banner"/>
   <br>
   <br>
   <br>
