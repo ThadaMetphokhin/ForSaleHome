@@ -27,16 +27,34 @@ img {
 }
 .Contracticon{
     opacity: 0.9;
-    border-radius: 5px;
+    border-radius: 10px;
     position: fixed;
     right: -0.5rem;
-    bottom: 5.5rem;
+    bottom: 14rem;
     background-color: rgb(255, 255, 255);
     width: 4rem;
     height: 8rem;
 }
 
+.phone{
+    position: fixed;
+    right: 0.5rem;
+    bottom: 15rem;
+}
+.line{
+    position: fixed;
+    right: 0.5rem;
+    bottom: 18.5rem;
+}
 
+.scrollup.active {
+    cursor: pointer;
+    position: fixed;
+    right: 1rem;
+    bottom: 2rem;
+    animation-name: example;
+    animation-duration: 2s;
+}
 .el1{
     background-color: #F0EF6C; 
     margin-top:-1.4rem;
@@ -76,25 +94,7 @@ img {
     }
 }
 
-.phone{
-    position: fixed;
-    right: 0.5rem;
-    bottom: 6rem;
-}
-.line{
-    position: fixed;
-    right: 0.5rem;
-    bottom: 10rem;
-}
 
-.scrollup.active {
-    cursor: pointer;
-    position: fixed;
-    right: 1rem;
-    bottom: 2rem;
-    animation-name: example;
-    animation-duration: 2s;
-}
 @keyframes example2 {
     from {
         opacity: 0;
