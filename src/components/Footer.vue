@@ -8,4 +8,9 @@
 .footer{
     text-align: center;
 }
+@media screen and (max-width:400px){
+    .footer p{
+        font-size: 0.5rem;
+    }
+}
 </style>
