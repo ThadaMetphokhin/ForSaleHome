@@ -23,6 +23,7 @@
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "@headlessui/vue": "^1.7.15",
     "@heroicons/vue": "^2.0.18",
+    "@vercel/analytics": "^1.0.1",
     "@vue-hero-icons/outline": "^1.7.2",
     "@vue-hero-icons/solid": "^1.7.2",
     "@vueuse/core": "^10.3.0",
