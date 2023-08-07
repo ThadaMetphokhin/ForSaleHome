@@ -1,5 +1,5 @@
 <template>
-    <div :id="items.Idele" :style="items.color">
+    <div class="content11" :id="items.Idele" :style="items.color">
         <br>
         <div :style="items.textstyle" id="setT">
             <h1>{{ items.name }}</h1>

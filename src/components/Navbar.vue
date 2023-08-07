@@ -8,6 +8,7 @@
   </div>
 </template>
 <style>
+
 span.p-menuitem-text {
   font-family: 'Kodchasan', sans-serif;
   font-weight: bold;
@@ -18,21 +19,18 @@ div.p-menubar {
   opacity: 0.91;
 }
 
-ul.p-menubar-root-list {
-  position: fixed;
-  right: 1rem;
-}
+
 
 a.p-menubar-button {
+  right: 0;
   position: fixed;
-  right: 1rem;
 }
 </style>
 <script setup lang="ts">
 import Menubar from 'primevue/menubar';
 import { ref } from 'vue'
 
-import { 
+import {
   movetoFronthome,
   movetoRoom1,
   movetoRoom2,
@@ -42,7 +40,10 @@ import {
   movetoMaps
 } from '../views/Content.vue'
 
-
+//Darkmode
+import { useDark, useToggle } from "@vueuse/core";
+const isDark = useDark();
+const toggleDark = useToggle(isDark);
 
 
 
