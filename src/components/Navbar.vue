@@ -22,7 +22,7 @@ div.p-menubar {
 
 
 a.p-menubar-button {
-  right: 0;
+  right: 1rem;
   position: fixed;
 }
 </style>

@@ -60,10 +60,10 @@
     <fa icon="fa-solid fa-circle-arrow-up" size="2xl" bounce />
   </a>
   <div class="Contracticon">
-    <a class="line" href="https://line.me/ti/p/GqqZOQYjt_">
+    <a class="line" href="https://line.me/ti/p/F5lVvslMKI">
       <img width="40" src="/public/line.png" />
     </a>
-    <a class="phone" href="tel:0968071248">
+    <a class="phone" href="tel:0623683064">
       <img width="40" src="/public/phone-call.png" />
     </a>
   </div>
