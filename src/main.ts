@@ -35,8 +35,6 @@ import {faLine} from '@fortawesome/free-brands-svg-icons'
 library.add(faUserSecret, faCircleArrowUp, faBars, faAngleDown, faPhoneVolume,faLine)
 
 
-//import css icon of fontawesome
-import './iconfontawesome.css'
 
 // setting locale info used by global scope as an options
 const i18n = createI18n({
