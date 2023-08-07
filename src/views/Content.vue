@@ -5,7 +5,7 @@
   <br>
   <br>
   <br>
-  <img src="../assets/Banner/Banner.png" style="width: 100%;" alt="Banner"/>
+  <img src="../assets/Banner/Banner.png" style="width: 100%;" alt="Banner" />
   <br>
   <br>
   <br>
@@ -47,15 +47,14 @@
         <p>แผนที่</p>
       </div>
       <div class="Maps" id="Maps">
-        
+
         <iframe
           src="https://www.google.com/maps/embed?pb=!4v1691229639588!6m8!1m7!1ssXykm0Nlc3sV1cxv-RK7Ew!2m2!1d19.34101253260362!2d100.1278765392856!3f184.00762339263792!4f-6.17299409900582!5f0.7820865974627469"
-           style="border:0;" allowfullscreen="true" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </a-layout-content>
   </div>
-
+  
   <a class="scrollup" @click="movetoTop" id="scrollupshow">
     <fa icon="fa-solid fa-circle-arrow-up" size="2xl" bounce />
   </a>
@@ -67,7 +66,8 @@
       <img width="40" src="/public/phone-call.png" />
     </a>
   </div>
-  <Footer />
+  
+  <Footer/>
 </template>
 <style scoped>
 /* For demo */
@@ -81,13 +81,14 @@ import { ref } from "vue";
 import '../views/Navbar.css'
 
 //Linear
+import Linear from '../components/Linear.vue'
+
 
 
 
 import { reveal, reveal2 } from './Contentjs'
 import Navbar from '../components/Navbar.vue'
 import SectionInformation from '../components/SectionInformatio.vue'
-import Linear from '../components/Linear.vue'
 import Footer from '../components/Footer.vue'
 
 //Element จะค่่อยๆ โชว์ให้เห็น
@@ -184,14 +185,12 @@ export default defineComponent({
   components: {
     Navbar,
     SectionInformation,
-    Linear,
     Footer,
-
+    Linear,
   },
   setup() {
 
     return {
-      item11,
       item1,
       getImgUrl,
       getImgUrl1,
@@ -234,7 +233,7 @@ export function movetoCookingRoom() {
   const RoomCooking = document.getElementById('RoomCooking')
   RoomCooking?.scrollIntoView()
 }
-export function movetoMaps(){
+export function movetoMaps() {
   const Maps = document.getElementById('Maps')
   Maps?.scrollIntoView()
 }

@@ -1,36 +1,30 @@
-
 <template>
-    <div :style="{ position: 'relative',height:'500' }">
-        <SpeedDial :model="items11" :radius="90" type="quarter-circle" direction="up-right" :style="{ top: 'calc(40% - 2rem)', left: 0,bottom:0,innerWidth:1 }" />
-    </div>
+    <SpeedDial :model="items"  direction="up" :style="{ left: 'calc(50% - 2rem)',bottom:0 }"  />
 </template>
 <style scroped>
-.p-button-icon-only{
-    width: 1rem;
-    height: 1rem;
+
+.linear{
+    background-color: yellow;
 }
 </style>
-<script setup  lang="ts">
+<script setup lang="ts">
+import {ref} from 'vue'
 import SpeedDial from 'primevue/speeddial';
-import { ref } from 'vue';
-import { useToast } from 'primevue/usetoast';
-import { useRouter } from 'vue-router';
-//for linear
-const items11 = ref([
+
+
+
+const items = ref([
     {
-        label: 'Vue Website',
-        icon: 'pi pi-external-link',
-        command: () => {
-            window.location.href = 'https://vuejs.org/'
-        }
+        label: 'Line',
+        icon: 'pi pi-lineicon',
+        command: () => (null)
     },
     {
-        label: 'Vue Website',
-        icon: 'pi pi-external-link',
+        label: 'Phone',
+        icon: 'pi pi-phone',
         command: () => {
             window.location.href = 'https://vuejs.org/'
         }
     }
 ])
-
 </script>

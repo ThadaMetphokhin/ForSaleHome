@@ -13,6 +13,9 @@ import { createI18n } from 'vue-i18n'
 //ดึง Css ของ primevue เข้ามาใช้งานในโปรเจค
 import "primevue/resources/themes/lara-light-indigo/theme.css";
 import "primevue/resources/primevue.min.css";
+
+//import css icon primevue
+import 'primeicons/primeicons.css';
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
 
@@ -25,11 +28,15 @@ import {
     faCircleArrowUp,
     faBars,
     faAngleDown,
-    faPhoneVolume
+    faPhoneVolume,  
 } from '@fortawesome/free-solid-svg-icons'
+import {faLine} from '@fortawesome/free-brands-svg-icons'
 
-library.add(faUserSecret, faCircleArrowUp, faBars, faAngleDown, faPhoneVolume)
+library.add(faUserSecret, faCircleArrowUp, faBars, faAngleDown, faPhoneVolume,faLine)
 
+
+//import css icon of fontawesome
+import './iconfontawesome.css'
 
 // setting locale info used by global scope as an options
 const i18n = createI18n({
@@ -53,7 +60,7 @@ const i18n = createI18n({
 const app = createApp(App)
 app.component('fa', FontAwesomeIcon)
 app.use(router)
-app.use(PrimeVue)
+app.use(PrimeVue,{icon:'lineicon'})
 app.use(Antd)
 app.use(i18n)
 app.mount('#app')

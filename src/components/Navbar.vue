@@ -51,43 +51,43 @@ const toggleDark = useToggle(isDark);
 const items = ref([
   {
     label: 'หน้าบ้าน',
-    icon: 'pi pi-fw pi-file',
+    icon: 'pi pi-home',
     command: () => movetoFronthome()
   },
   {
     label: 'ห้องนอน',
-    icon: 'pi pi-fw pi-pencil',
+    icon: 'pi pi-home',
     items: [
       {
         label: 'ห้องนอน 1',
-        icon: 'pi pi-fw pi-align-left',
+        icon: 'pi pi-chevron-right',
         command: () => movetoRoom1()
       },
       {
         label: 'ห้องนอน 2',
-        icon: 'pi pi-fw pi-align-right',
+        icon: 'pi pi-chevron-right',
         command: () => movetoRoom1()
       },
     ]
   },
   {
     label: 'โถงกลางบ้าน',
-    icon: 'pi pi-fw pi-file',
+    icon: 'pi pi-home',
     command: () => movetoCenterhome()
   },
   {
     label: 'ห้องน้ำในตัวบ้าน',
-    icon: 'pi pi-fw pi-file',
+    icon: 'pi pi-home',
     command: () => movetoBathRoominhome()
   },
   {
     label: 'ห้องครัว',
-    icon: 'pi pi-fw pi-file',
+    icon: 'pi pi-home',
     command: () => movetoCookingRoom()
   },
   {
     label: 'แผนที่',
-    icon: 'pi pi-fw pi-file',
+    icon: 'pi  pi-map',
     command: () => movetoMaps()
   },
 
