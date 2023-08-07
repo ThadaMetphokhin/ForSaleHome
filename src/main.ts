@@ -54,12 +54,12 @@ const i18n = createI18n({
         }
     }
 })
-
+inject()
 const app = createApp(App)
 app.component('fa', FontAwesomeIcon)
 app.use(router)
 app.use(PrimeVue,{icon:'lineicon'})
 app.use(Antd)
 app.use(i18n)
-app.use(inject)
+
 app.mount('#app')
