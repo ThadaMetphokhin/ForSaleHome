@@ -59,7 +59,7 @@ const items = ref([
     icon: 'pi pi-home',
     items: [
       {
-        label: 'ห้องนอน 1',
+        label: 'ห้องนอน 11',
         icon: 'pi pi-chevron-right',
         command: () => movetoRoom1()
       },
