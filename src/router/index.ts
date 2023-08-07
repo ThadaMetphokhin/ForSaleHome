@@ -1,10 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Content from '../App.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/asd',
+      path: '/',
       name: 'asd',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
@@ -13,5 +12,5 @@ const router = createRouter({
     }
   ]
 })
-
+export default router
 
