@@ -1,8 +1,8 @@
 //import './assets/main.css'
 
 import { createApp } from 'vue'
-
-
+//import vercel analys
+import { inject } from '@vercel/analytics';
 import PrimeVue from "primevue/config";
 import Antd from 'ant-design-vue';
 import App from './App.vue'
@@ -61,4 +61,5 @@ app.use(router)
 app.use(PrimeVue,{icon:'lineicon'})
 app.use(Antd)
 app.use(i18n)
+app.use(inject)
 app.mount('#app')
