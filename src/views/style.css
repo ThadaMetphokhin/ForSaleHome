@@ -90,9 +90,9 @@ img {
 @media screen and (max-width:450px) {
     .Maps {
         position: absolute;
-        left:1rem;
+        left:1.5rem;
         border-radius: 10px;
-        width: 70%;
+        width: 85%;
         height: inherit;
     }
     .textstyle {
