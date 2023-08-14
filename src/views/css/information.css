@@ -1,0 +1,36 @@
+.Information{
+    position: relative;
+    height: 100vh;
+    background-color: rgb(43, 44, 50,1);
+}
+.Information > p{
+    top: 2rem;
+    left: 5rem;
+    position: absolute;
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
+.Information .item{
+    left: 40rem;
+    position: absolute;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    top: 3rem;
+}
+
+.Information .item .iconroom{
+    position: absolute;
+    left: -5rem;
+    top: 1.5rem;
+}
+.Information .item .iconlocation{
+    position: absolute;
+    left: -4.65rem;
+    top: 10.5rem;
+}
+.Information .item .iconcar{
+    position: absolute;
+    left: -4.65rem;
+    top: 21.5rem;
+}

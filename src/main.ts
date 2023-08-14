@@ -29,11 +29,23 @@ import {
     faBars,
     faAngleDown,
     faPhoneVolume,  
+    faLocationDot,
+    faHouseUser,
+    faCarSide,
 } from '@fortawesome/free-solid-svg-icons'
 import {faLine} from '@fortawesome/free-brands-svg-icons'
 
-library.add(faUserSecret, faCircleArrowUp, faBars, faAngleDown, faPhoneVolume,faLine)
-
+library.add(
+    faUserSecret, 
+    faCircleArrowUp, 
+    faBars, 
+    faAngleDown, 
+    faPhoneVolume,
+    faLine,
+    faLocationDot,
+    faHouseUser,
+    faCarSide,
+)
 
 
 // setting locale info used by global scope as an options
@@ -61,5 +73,4 @@ app.use(router)
 app.use(PrimeVue,{icon:'lineicon'})
 app.use(Antd)
 app.use(i18n)
-
 app.mount('#app')

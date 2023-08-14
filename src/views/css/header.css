@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap');
+.container{
+    position:relative;
+}
+.areaheader{
+    height: 100vh; width:100%
+}
+.areaheader h2{
+    z-index: 1;
+    font-family: 'Sulphur Point', sans-serif;
+    position:absolute; 
+    top:9rem;
+    left:5rem; 
+    font-size:5rem;
+}
+.areaheader h3{
+    font-family: 'Sulphur Point', sans-serif;
+    position:absolute; 
+    top:9rem;
+    left:5rem; 
+    font-size:9rem; 
+    z-index:1;
+}
+.areaheader h3 span{
+    color: white;
+}
+.areaheader img{
+    border-radius: .4rem;
+    position:absolute; 
+    right:7rem;
+    top:5rem;
+    width:45.5%;
+    height:70%;
+}
+.areaheader hr{
+    position:absolute; 
+    top:30rem; 
+    left:5rem; 
+    width:10rem; 
+    height:1rem; 
+    background-color:black;
+}
+
+@media screen and (max-width:430px) {
+    .areaheader{
+        height: 80vh; 
+    }
+    .areaheader h2{
+        z-index: 1;
+        font-family: 'Sulphur Point', sans-serif;
+        position:absolute; 
+        top:-1rem;
+        left:3rem; 
+        font-size:2rem;
+    }
+    .areaheader h3{
+        font-family: 'Sulphur Point', sans-serif;
+        position:absolute; 
+        top:2rem;
+        left:3rem; 
+        font-size:2rem; 
+        z-index:1;
+    }
+    .areaheader h3 {
+        color: rgb(255, 255, 255);
+    }
+    .areaheader img{
+        border-radius: 0.4rem;
+        position:absolute; 
+        right:1rem;
+        top:9rem;
+        width:90%;
+        height:40%;
+    }
+    .areaheader hr{
+        left: 6.5rem;
+        position:absolute; 
+        top:24rem; 
+        width:10rem; 
+        height:1rem; 
+        background-color:black;
+    }
+    
+}

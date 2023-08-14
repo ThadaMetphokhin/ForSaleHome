@@ -1,9 +1,7 @@
 <template>
     <div class="content11" :id="items.Idele" :style="items.color">
         <br>
-        <div :style="items.textstyle" id="setT">
-            <h1>{{ items.name }}</h1>
-        </div>
+        <h1>{{ items.name }}</h1>
         <div class="reveal">
             <a-carousel arrows dots-class="slick-dots slick-thumb">
 
@@ -24,19 +22,13 @@
 </template>
 <style scoped>
 
-@media screen and (max-width:400px) {
-    div[style]#setT {
-        font-size: 0.5rem;
-        width: 8rem;
-        margin-left: 1rem;
-    }
+
+.content11{
+    position: relative;
 }
-@media screen and (min-width:400px) {
-    div[style]#setT {
-        font-size: 0.8rem;
-        width: 14rem;
-        margin-left: 1rem;
-    }
+.content11 h1{
+    position: absolute;
+    left: 1rem;
 }
 .reveal {
     position: relative;
@@ -59,7 +51,7 @@
     border: 5px solid #fff;
     display: block;
     margin: auto;
-    max-width: 80%;
+    max-width: 50%;
 }
 
 .ant-carousel :deep(.slick-arrow) {

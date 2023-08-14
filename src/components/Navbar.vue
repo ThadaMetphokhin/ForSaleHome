@@ -4,11 +4,15 @@
       <template #start>
         <img alt="logo" src="/public/for-sale.png" height="40" class="mr-2" />
       </template>
+      <template #end>
+        <b-button size="sm" class="my-2 my-sm-0 btn-info" type="submit" @click="$i18n.locale = 'en'">{{ $t('english')
+        }}</b-button>
+      </template>
+
     </Menubar>
   </div>
 </template>
 <style>
-
 span.p-menuitem-text {
   font-family: 'Kodchasan', sans-serif;
   font-weight: bold;
@@ -27,6 +31,7 @@ a.p-menubar-button {
 }
 </style>
 <script setup lang="ts">
+import { defineComponent } from 'vue';
 import Menubar from 'primevue/menubar';
 import { ref } from 'vue'
 
@@ -46,6 +51,13 @@ const isDark = useDark();
 const toggleDark = useToggle(isDark);
 
 
+const messages = {
+  en: {
+    information: {
+      sec1: 'Information',
+    }
+  }
+}
 
 
 const items = ref([
@@ -92,5 +104,6 @@ const items = ref([
   },
 
 ]);
+
 
 </script>
