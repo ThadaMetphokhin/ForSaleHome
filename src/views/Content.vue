@@ -10,7 +10,7 @@
       <h2>Welcome </h2>
       <h3>HOUSE <span> DETAILS</span></h3>
       <div>
-        <img src="../assets/Banner/salehome (1).png">
+        <img src="../assets/Banner/salehome.png">
       </div>
       <hr>
     </div>
