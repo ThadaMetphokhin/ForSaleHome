@@ -47,9 +47,10 @@
   </div>
   <div class="el1" id="Fronthome">
     <br>
-    <div class="textstyle" id="setT">
+    <div class="textstyle" >
       <h1>หน้าบ้าน</h1>
-    </div><br>
+    </div>
+    <br>
     <a-carousel arrows dots-class="slick-dots slick-thumb">
       <template #customPaging="props">
         <a>

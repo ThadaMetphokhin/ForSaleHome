@@ -67,9 +67,8 @@
     .areaheader img{
         border-radius: 0.4rem;
         position:absolute; 
-        right:1rem;
         top:9rem;
-        width:90%;
+        width:60%;
         height:40%;
     }
     .areaheader hr{

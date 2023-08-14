@@ -78,6 +78,12 @@
 .ant-carousel :deep .slick-thumb li.slick-active img {
     filter: grayscale(0%);
 }
+
+@media screen and (max-width:450px) {
+    .content11 h1{
+        font-size: 1rem;;
+    }
+}
 </style>
 <script  lang="ts">
 

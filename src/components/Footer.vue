@@ -21,7 +21,9 @@
 }
 @media screen and (max-width:400px){
     .footer p{
-        font-size: 0.5rem;
+        position: absolute;
+        left: 0rem;
+        font-size: 0.1rem;
     }
 }
 </style>

@@ -87,3 +87,16 @@ img {
 
 
 
+@media screen and (max-width:450px) {
+    .Maps {
+        position: absolute;
+        left:1rem;
+        border-radius: 10px;
+        width: 70%;
+        height: inherit;
+    }
+    .textstyle {
+        font-size: 0.5rem;
+    }
+    
+}
