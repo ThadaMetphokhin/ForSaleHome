@@ -33,6 +33,7 @@
     height:70%;
 }
 .areaheader hr{
+    border-radius: 5px; 
     position:absolute; 
     top:30rem; 
     left:5rem; 
@@ -67,11 +68,13 @@
     .areaheader img{
         border-radius: 0.4rem;
         position:absolute; 
+        left:2rem;
         top:9rem;
-        width:60%;
+        width:80%;
         height:40%;
     }
     .areaheader hr{
+        border-radius: 5px;
         left: 6.5rem;
         position:absolute; 
         top:24rem; 
