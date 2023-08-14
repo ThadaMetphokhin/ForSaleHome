@@ -84,3 +84,45 @@
     }
     
 }
+@media screen and (max-width:415px) {
+    .areaheader{
+        height: 40vh; 
+    }
+    .areaheader h2{
+        z-index: 1;
+        font-family: 'Sulphur Point', sans-serif;
+        position:absolute; 
+        top:-1rem;
+        left:3rem; 
+        font-size:2rem;
+    }
+    .areaheader h3{
+        font-family: 'Sulphur Point', sans-serif;
+        position:absolute; 
+        top:2rem;
+        left:3rem; 
+        font-size:2rem; 
+        z-index:1;
+    }
+    .areaheader h3 {
+        color: rgb(255, 255, 255);
+    }
+    .areaheader img{
+        border-radius: 0.4rem;
+        position:absolute; 
+        left:1.5rem;
+        top:9rem;
+        width:90%;
+        height:40%;
+    }
+    .areaheader hr{
+        border-radius: 5px;
+        left: 8rem;
+        position:absolute; 
+        top:20rem; 
+        width:10rem; 
+        height:1rem; 
+        background-color:black;
+    }
+    
+}

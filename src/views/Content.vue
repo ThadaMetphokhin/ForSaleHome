@@ -150,7 +150,7 @@ const item1 = ref([
     name: 'ห้องนอน 1',
     Idele: 'Room1',
     data: getImgUrl1,
-    color: 'background-color: rgb(43, 44, 50,1); margin-top:-1.4rem; color:white; height:100vh',
+    color: 'background-color: rgb(43, 44, 50,1); margin-top:-1.4rem; color:white;@media screen and(max-width:415px) {.content11{height: 50vh;margin:0;}}',
     textstyle: 'border-radius: 2rem; text-align: center ;background-color: #272647;',
     indeximg: 3
   },
@@ -159,7 +159,7 @@ const item1 = ref([
     name: 'ห้องนอน 2',
     Idele: 'Room2',
     data: getImgUrl2,
-    color: 'background-color: rgb(199, 199, 199); margin-top:-1.4rem;',
+    color: 'background-color: rgb(199, 199, 199); margin-top:-1.4rem;@media screen and(max-width:415px) {.content11{height: 50vh;margin:0;}}',
     textstyle: 'border-radius: 2rem; text-align: center ;background-color: #A8DDB4;',
     indeximg: 2
   },
@@ -168,7 +168,7 @@ const item1 = ref([
     name: 'โถงกลางบ้าน',
     Idele: 'CenterRoomhome',
     data: getImgUrl3,
-    color: 'background-color: rgb(43, 44, 50,1); margin-top:-1.4rem; color:white;',
+    color: 'background-color: rgb(43, 44, 50,1); margin-top:-1.4rem; color:white;@media screen and(max-width:415px) {.content11{height: 50vh;margin:0;}}',
     textstyle: 'border-radius: 2rem; text-align: center ;background-color: #272647;',
     indeximg: 2
   },
@@ -177,7 +177,7 @@ const item1 = ref([
     name: 'ห้องน้ำในตัวบ้าน',
     Idele: 'BathRoominhome',
     data: getImgUrl4,
-    color: 'background-color: rgb(199, 199, 199); margin-top:-1.4rem;',
+    color: 'background-color: rgb(199, 199, 199); margin-top:-1.4rem;@media screen and(max-width:415px) {.content11{height: 50vh;margin:0;}}',
     textstyle: 'border-radius: 2rem; text-align: center ;background-color: #A8DDB4;',
     indeximg: 2
   },
@@ -186,7 +186,7 @@ const item1 = ref([
     name: 'ห้องครัว',
     Idele: 'RoomCooking',
     data: getImgUrl5,
-    color: 'background-color: rgb(43, 44, 50,1); margin-top:-1.4rem; color:white;',
+    color: 'background-color: rgb(43, 44, 50,1); margin-top:-1.4rem; color:white;@media screen and(max-width:415px) {.content11{height: 50vh;margin:0;}}',
     textstyle: 'border-radius: 2rem; text-align: center ;background-color: #272647;',
     indeximg: 3
   },

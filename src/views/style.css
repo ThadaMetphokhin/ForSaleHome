@@ -100,3 +100,21 @@ img {
     }
     
 }
+@media screen and (max-width:415px) {
+    .el1{
+        margin: 0;
+        height: 30vh;
+    }
+    
+    .contentmaps{
+        height: 50vh;
+    }
+    .Maps iframe{
+        position: absolute;
+        top: 1rem;
+        left: 1.5rem;
+        border-radius: 10px;
+        width: 90%;
+        height: 40vh;
+    }
+}

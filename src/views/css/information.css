@@ -69,3 +69,40 @@
     }
     
 }
+@media screen and (max-width:415px) {
+    .Information{
+        height: 50vh;
+    }
+    .Information > p{
+        top: 2rem;
+        left: 1rem;
+        position: absolute;
+        color: whitesmoke;
+        font-size: 1rem;
+    }
+    
+    .Information .item{
+        left: 8rem;
+        position: absolute;
+        color: whitesmoke;
+        font-size: 0.8rem;
+        top: 5rem;
+    }
+    
+    .Information .item .iconroom{
+        position: absolute;
+        left: -2rem;
+        top: 1rem;
+    }
+    .Information .item .iconlocation{
+        position: absolute;
+        left: -1.9rem;
+        top: 5.6rem;
+    }
+    .Information .item .iconcar{
+        position: absolute;
+        left: -2rem;
+        top:11.5rem;
+    }
+    
+}

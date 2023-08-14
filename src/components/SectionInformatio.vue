@@ -8,7 +8,7 @@
                 <template #customPaging="props">
 
                     <a>
-                        <img  :src="items.data(props.i)" />
+                        <img :src="items.data(props.i)" />
                     </a>
                 </template>
                 <div v-for="item in items.indeximg" :key="item">
@@ -21,25 +21,27 @@
     </div>
 </template>
 <style scoped>
-
-
-.content11{
+.content11 {
     position: relative;
 }
-.content11 h1{
+
+.content11 h1 {
     position: absolute;
     left: 1rem;
 }
+
 .reveal {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
     transition: 0.5s all ease;
 }
+
 .reveal.active {
     transform: translateY(0px);
     opacity: 1;
 }
+
 .ant-carousel :deep(.slick-dots) {
     position: relative;
     height: auto;
@@ -80,8 +82,25 @@
 }
 
 @media screen and (max-width:450px) {
-    .content11 h1{
-        font-size: 1rem;;
+    .content11 h1 {
+        font-size: 1rem;
+        ;
+    }
+}
+
+@media screen and (max-width:415px) {
+    .ant-carousel :deep(.slick-slide img) {
+        margin-top: 2rem;
+        position: relative;
+        border-radius: 18px;
+        border: 5px solid #fff;
+        display: block;
+        margin-left: 6rem;
+    }
+
+    .ant-carousel :deep(.slick-thumb li) {
+
+        left: -0.8rem;
     }
 }
 </style>

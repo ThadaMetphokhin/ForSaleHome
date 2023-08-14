@@ -44,3 +44,17 @@
     height: 30px;
   }
 }
+@media screen and (max-width:415px) {
+  .ant-carousel :deep(.slick-slide img) {
+    margin-top: 2rem;
+    position: relative;
+    border-radius: 18px;
+    border: 5px solid #fff;
+    display: block;
+    margin-left:6rem;
+  }
+  .ant-carousel :deep(.slick-thumb li) {
+  
+   left: -0.8rem;
+  }
+}
