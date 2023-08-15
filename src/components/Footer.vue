@@ -30,7 +30,7 @@
 @media screen and (max-width:415px){
     .footer{
         width: auto;
-        bottom: -1.6rem;
+        bottom: -1.6mjkrem;
     }
     .footer p{
         top: 1.2rem;
