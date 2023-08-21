@@ -4,12 +4,16 @@
       <template #start>
         <img alt="logo" src="/public/for-sale.png" height="40" class="mr-2" />
       </template>
-      
+      <template #end>
+        <Button label="DarkMode" severity="secondary" @click="toggleDark()" size="small"/>
+        
+      </template>
 
     </Menubar>
   </div>
 </template>
 <style>
+
 span.p-menuitem-text {
   font-family: 'Kodchasan', sans-serif;
   font-weight: bold;
@@ -32,6 +36,11 @@ import { defineComponent } from 'vue';
 import Menubar from 'primevue/menubar';
 import { ref } from 'vue'
 
+
+import Button from 'primevue/button';
+import { useDark, useToggle } from "@vueuse/core";
+const isDark = useDark();
+const toggleDark = useToggle(isDark);
 import {
   movetoFronthome,
   movetoRoom1,
@@ -42,19 +51,9 @@ import {
   movetoMaps
 } from '../views/Content.vue'
 
-//Darkmode
-import { useDark, useToggle } from "@vueuse/core";
-const isDark = useDark();
-const toggleDark = useToggle(isDark);
 
 
-const messages = {
-  en: {
-    information: {
-      sec1: 'Information',
-    }
-  }
-}
+
 
 
 const items = ref([

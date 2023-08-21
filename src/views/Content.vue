@@ -47,20 +47,30 @@
   </div>
   <div class="el1" id="Fronthome">
     <br>
-    <div class="textstyle" >
+    <div class="textstyle">
       <h1>หน้าบ้าน</h1>
     </div>
     <br>
-    <a-carousel arrows dots-class="slick-dots slick-thumb">
-      <template #customPaging="props">
-        <a>
-          <img :src="getImgUrl(props.i)" />
-        </a>
-      </template>
-      <div v-for="item in 4" :key="item">
-        <a-image :src="getImgUrl(item - 1)" />
-      </div>
-    </a-carousel>
+    <div class="set1">
+      <a-carousel arrows dots-class="slick-dots slick-thumb">
+        <template #customPaging="props">
+          <a>
+            <img :src="getImgUrl(props.i)" />
+          </a>
+        </template>
+        <div v-for="item in 4" :key="item">
+          <a-image :src="getImgUrl(item - 1)" />
+        </div>
+      </a-carousel>
+    </div>
+    <div class="textinformation">
+      <p>รายละเอียด</p>
+      <ul>
+        <li>แอร์ 1 ตัว</li>
+        <li>พัดลม 3 ตัว</li>
+        <li>ไฟ 4 ดวง</li>
+      </ul>
+    </div>
   </div>
   <br>
   <br>

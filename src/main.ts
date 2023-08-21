@@ -28,18 +28,19 @@ import {
     faCircleArrowUp,
     faBars,
     faAngleDown,
-    faPhoneVolume,  
+    faPhoneVolume,
     faLocationDot,
     faHouseUser,
     faCarSide,
 } from '@fortawesome/free-solid-svg-icons'
-import {faLine} from '@fortawesome/free-brands-svg-icons'
+import { faLine } from '@fortawesome/free-brands-svg-icons'
+
 
 library.add(
-    faUserSecret, 
-    faCircleArrowUp, 
-    faBars, 
-    faAngleDown, 
+    faUserSecret,
+    faCircleArrowUp,
+    faBars,
+    faAngleDown,
     faPhoneVolume,
     faLine,
     faLocationDot,
@@ -49,28 +50,29 @@ library.add(
 
 
 // setting locale info used by global scope as an options
-const i18n = createI18n({
-    locale: 'TH',
-    messages: {
-        en: {
-            message: {
-                hello: 'hello world',
-                greeting: 'good morning, world!'
-            }
-        },
-        ja: {
-            message: {
-                hello: 'こんにちは、世界',
-                greeting: 'おはよう、世界！'
-            }
+const messages = {
+    th: {
+        message: {
+            menu1: 'หน้าบ้าน'
+        }
+    },
+    ja: {
+        message: {
+            hello: 'こんにちは、世界'
         }
     }
-})
+}
+// Create VueI18n instance with options
+const i18n =  createI18n({
+    locale: 'th', // set locale
+    messages, // set locale messages
+  })
+
 inject()
 const app = createApp(App)
 app.component('fa', FontAwesomeIcon)
 app.use(router)
-app.use(PrimeVue,{icon:'lineicon'})
+app.use(PrimeVue, { icon: 'lineicon' })
 app.use(Antd)
-app.use(i18n)
+app.use(createI18n,{i18n})
 app.mount('#app')
