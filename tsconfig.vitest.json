@@ -4,7 +4,6 @@
   "compilerOptions": {
     "composite": true,
     "lib": [],
-    "allowJs": true,
     "types": ["node", "jsdom"]
   }
 }
