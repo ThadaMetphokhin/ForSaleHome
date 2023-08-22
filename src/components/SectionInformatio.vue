@@ -74,7 +74,7 @@
                         <img :src="getImgUrl3(props.i)" />
                     </a>
                 </template>
-                <div v-for="item in 3" :key="item">
+                <div v-for="item in 2" :key="item">
                     <a-image :src="getImgUrl3(item - 1)" />
                 </div>
 
