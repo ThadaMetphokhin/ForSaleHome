@@ -74,7 +74,7 @@
   </div>
   <br>
   <br>
-  <SectionInformation v-for="(items, index) in item1 " :key="index" :items="items" />
+  <SectionInformation />
   <br>
   <div class="contentmaps">
     <br>
@@ -128,80 +128,8 @@ window.addEventListener("scroll", reveal);
 
 window.addEventListener("scroll", reveal2)
 
+
 const baseUrl = '/ImageHouse/Areafonthome/';
-const baseUrl2 = '/ImageHouse/FontRoom/';
-const baseUrl3 = '/ImageHouse/BackRoom/';
-const baseUrl4 = '/ImageHouse/Centerhome/';
-const baseUrl5 = '/ImageHouse/BathRoom/';
-const baseUrl6 = '/ImageHouse/RoomCoking/';
-const getImgUrl = (i: number) => {
-  return `${baseUrl}${i + 1}.jpg`;
-};
-const getImgUrl1 = (i: number) => {
-  return `${baseUrl2}${i + 1}.jpg`;
-};
-const getImgUrl2 = (i: number) => {
-  return `${baseUrl3}${i + 1}.jpg`;
-};
-const getImgUrl3 = (i: number) => {
-  return `${baseUrl4}${i + 1}.jpg`;
-};
-const getImgUrl4 = (i: number) => {
-  return `${baseUrl5}${i + 1}.jpg`;
-};
-const getImgUrl5 = (i: number) => {
-  return `${baseUrl6}${i + 1}.jpg`;
-};
-
-const item1 = ref([
-
-  {
-    id: 2,
-    name: 'ห้องนอน 1',
-    Idele: 'Room1',
-    data: getImgUrl1,
-    color: 'background-color: rgb(43, 44, 50,1); margin-top:-1.4rem; color:white;@media screen and(max-width:415px) {.content11{height: 50vh;margin:0;}}',
-    textstyle: 'border-radius: 2rem; text-align: center ;background-color: #272647;',
-    indeximg: 3
-  },
-  {
-    id: 3,
-    name: 'ห้องนอน 2',
-    Idele: 'Room2',
-    data: getImgUrl2,
-    color: 'background-color: rgb(199, 199, 199); margin-top:-1.4rem;@media screen and(max-width:415px) {.content11{height: 50vh;margin:0;}}',
-    textstyle: 'border-radius: 2rem; text-align: center ;background-color: #A8DDB4;',
-    indeximg: 2
-  },
-  {
-    id: 4,
-    name: 'โถงกลางบ้าน',
-    Idele: 'CenterRoomhome',
-    data: getImgUrl3,
-    color: 'background-color: rgb(43, 44, 50,1); margin-top:-1.4rem; color:white;@media screen and(max-width:415px) {.content11{height: 50vh;margin:0;}}',
-    textstyle: 'border-radius: 2rem; text-align: center ;background-color: #272647;',
-    indeximg: 2
-  },
-  {
-    id: 5,
-    name: 'ห้องน้ำในตัวบ้าน',
-    Idele: 'BathRoominhome',
-    data: getImgUrl4,
-    color: 'background-color: rgb(199, 199, 199); margin-top:-1.4rem;@media screen and(max-width:415px) {.content11{height: 50vh;margin:0;}}',
-    textstyle: 'border-radius: 2rem; text-align: center ;background-color: #A8DDB4;',
-    indeximg: 2
-  },
-  {
-    id: 6,
-    name: 'ห้องครัว',
-    Idele: 'RoomCooking',
-    data: getImgUrl5,
-    color: 'background-color: rgb(43, 44, 50,1); margin-top:-1.4rem; color:white;@media screen and(max-width:415px) {.content11{height: 50vh;margin:0;}}',
-    textstyle: 'border-radius: 2rem; text-align: center ;background-color: #272647;',
-    indeximg: 3
-  },
-]);
-
 
 
 export default defineComponent({
@@ -212,16 +140,12 @@ export default defineComponent({
   },
   setup() {
 
-    return {
-      item1,
-      getImgUrl,
-      getImgUrl1,
-      getImgUrl2,
-      getImgUrl3,
-      getImgUrl4,
-      getImgUrl5,
+    const getImgUrl = (i: number) => {
+      return `${baseUrl}${i + 1}.jpg`;
     };
-
+    return{
+      getImgUrl
+    }
   },
   methods: {
     movetoTop() {

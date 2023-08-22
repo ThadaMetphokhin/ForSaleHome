@@ -1,18 +1,137 @@
 <template>
-    <div class="content11" :id="items.Idele" :style="items.color">
+    <div class="elm1" id="Room1">
+        <p class="topic1">ห้องนอน 1</p>
+        <div class="textinformation1">
+            <p>รายละเอียด</p>
+            <ul>
+                <li>แอร์ 1 ตัว</li>
+                <li>พัดลม 1 ตัว</li>
+                <li>ไฟ 1 ดวง</li>
+            </ul>
+        </div>
         <br>
-        <h1>{{ items.name }}</h1>
         <div class="reveal">
             <a-carousel arrows dots-class="slick-dots slick-thumb">
 
                 <template #customPaging="props">
 
                     <a>
-                        <img :src="items.data(props.i)" />
+                        <img :src="getImgUrl1(props.i)" />
                     </a>
                 </template>
-                <div v-for="item in items.indeximg" :key="item">
-                    <a-image :src="items.data(item - 1)" />
+                <div v-for="item in 3" :key="item">
+                    <a-image :src="getImgUrl1(item - 1)" />
+                </div>
+
+            </a-carousel>
+        </div>
+    </div>
+    <div class="elm2" id="Room2">
+        <p class="topic2">ห้องนอน 2</p>
+        <div class="textinformation2">
+            <p>รายละเอียด</p>
+            <ul>
+                <li>แอร์ 1 ตัว</li>
+                <li>พัดลม 1 ตัว</li>
+                <li>ไฟ 1 ดวง</li>
+            </ul>
+        </div>
+        <br>
+        <div class="reveal">
+            <a-carousel arrows dots-class="slick-dots slick-thumb">
+
+                <template #customPaging="props">
+
+                    <a>
+                        <img :src="getImgUrl2(props.i)" />
+                    </a>
+                </template>
+                <div v-for="item in 2" :key="item">
+                    <a-image :src="getImgUrl2(item - 1)" />
+                </div>
+
+            </a-carousel>
+        </div>
+        <br>
+    </div>
+    <div class="elm3" id="CenterRoomhome">
+        <p class="topic3">ห้องโถงกลางบ้าน</p>
+        <div class="textinformation3">
+            <p>รายละเอียด</p>
+            <ul>
+                <li>แอร์ 1 ตัว</li>
+                <li>พัดลม 1 ตัว</li>
+                <li>ไฟ 1 ดวง</li>
+            </ul>
+        </div>
+        <br>
+        <div class="reveal">
+            <a-carousel arrows dots-class="slick-dots slick-thumb">
+
+                <template #customPaging="props">
+
+                    <a>
+                        <img :src="getImgUrl3(props.i)" />
+                    </a>
+                </template>
+                <div v-for="item in 3" :key="item">
+                    <a-image :src="getImgUrl3(item - 1)" />
+                </div>
+
+            </a-carousel>
+        </div>
+        <br>
+    </div>
+    <div class="elm4" id="BathRoominhome">
+        <p class="topic1">ห้องน้ำในตัวบ้าน</p>
+        <div class="textinformation4">
+            <p>รายละเอียด</p>
+            <ul>
+                <li>แอร์ 1 ตัว</li>
+                <li>พัดลม 1 ตัว</li>
+                <li>ไฟ 1 ดวง</li>
+            </ul>
+        </div>
+        <br>
+        <div class="reveal">
+            <a-carousel arrows dots-class="slick-dots slick-thumb">
+
+                <template #customPaging="props">
+
+                    <a>
+                        <img :src="getImgUrl4(props.i)" />
+                    </a>
+                </template>
+                <div v-for="item in 2" :key="item">
+                    <a-image :src="getImgUrl4(item - 1)" />
+                </div>
+
+            </a-carousel>
+        </div>
+        <br>
+    </div>
+    <div class="elm5" id="RoomCooking">
+        <p class="topic5">ห้องครัว</p>
+        <div class="textinformation5">
+            <p>รายละเอียด</p>
+            <ul>
+                <li>แอร์ 1 ตัว</li>
+                <li>พัดลม 1 ตัว</li>
+                <li>ไฟ 1 ดวง</li>
+            </ul>
+        </div>
+        <br>
+        <div class="reveal">
+            <a-carousel arrows dots-class="slick-dots slick-thumb">
+
+                <template #customPaging="props">
+
+                    <a>
+                        <img :src="getImgUrl5(props.i)" />
+                    </a>
+                </template>
+                <div v-for="item in 3" :key="item">
+                    <a-image :src="getImgUrl5(item - 1)" />
                 </div>
 
             </a-carousel>
@@ -21,97 +140,42 @@
     </div>
 </template>
 <style scoped>
-.content11 {
-    position: relative;
-}
-
-.content11 h1 {
-    position: absolute;
-    left: 1rem;
-}
-
-.reveal {
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 0.5s all ease;
-}
-
-.reveal.active {
-    transform: translateY(0px);
-    opacity: 1;
-}
-
-.ant-carousel :deep(.slick-dots) {
-    position: relative;
-    height: auto;
-    z-index: 0;
-}
-
-.ant-carousel :deep(.slick-slide img) {
-    border-radius: 18px;
-    border: 5px solid #fff;
-    display: block;
-    margin: auto;
-    max-width: 50%;
-}
-
-.ant-carousel :deep(.slick-arrow) {
-    display: none !important;
-}
-
-.ant-carousel :deep(.slick-thumb) {
-    bottom: 0px;
-}
-
-.ant-carousel :deep(.slick-thumb li) {
-    width: 60px;
-    height: 45px;
-}
-
-.ant-carousel :deep(.slick-thumb li img) {
-    border-radius: 5px;
-    width: 100%;
-    height: 100%;
-    filter: grayscale(100%);
-    display: block;
-}
-
-.ant-carousel :deep .slick-thumb li.slick-active img {
-    filter: grayscale(0%);
-}
-
-@media screen and (max-width:450px) {
-    .content11 h1 {
-        font-size: 1rem;
-        ;
-    }
-}
-
-@media screen and (max-width:415px) {
-    .ant-carousel :deep(.slick-slide img) {
-        margin-top: 2rem;
-        position: relative;
-        border-radius: 18px;
-        border: 5px solid #fff;
-        display: block;
-        margin-left: 6rem;
-    }
-
-    .ant-carousel :deep(.slick-thumb li) {
-
-        left: -0.8rem;
-    }
-}
+@import url('./css/section.css');
+@import url('./css/sectionelement.css');
 </style>
 <script  lang="ts">
+import { defineComponent } from 'vue';
 
-export default {
-    props: {
-        items: {
-            type: Object,
-            required: true,
-        },
-    },
-};
+//location of picture
+const baseUrl1 = '/ImageHouse/FontRoom/';
+const baseUrl2 = '/ImageHouse/BackRoom/';
+const baseUrl3 = '/ImageHouse/Centerhome/';
+const baseUrl4 = '/ImageHouse/BathRoom/';
+const baseUrl5 = '/ImageHouse/RoomCoking/';
+export default defineComponent({
+    setup() {
+        const getImgUrl1 = (i: number) => {
+            return `${baseUrl1}${i + 1}.jpg`;
+        };
+        const getImgUrl2 = (i: number) => {
+            return `${baseUrl2}${i + 1}.jpg`;
+        };
+        const getImgUrl3 = (i: number) => {
+            return `${baseUrl3}${i + 1}.jpg`;
+        };
+        const getImgUrl4 = (i: number) => {
+            return `${baseUrl4}${i + 1}.jpg`;
+        };
+        const getImgUrl5 = (i: number) => {
+            return `${baseUrl5}${i + 1}.jpg`;
+        };
+        return {
+            getImgUrl1,
+            getImgUrl2,
+            getImgUrl3,
+            getImgUrl4,
+            getImgUrl5
+        }
+    }
+})
 </script>

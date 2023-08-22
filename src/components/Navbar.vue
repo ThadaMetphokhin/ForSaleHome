@@ -4,10 +4,7 @@
       <template #start>
         <img alt="logo" src="/public/for-sale.png" height="40" class="mr-2" />
       </template>
-      <template #end>
-        <Button label="DarkMode" severity="secondary" @click="toggleDark()" size="small"/>
-        
-      </template>
+      
 
     </Menubar>
   </div>
@@ -67,14 +64,14 @@ const items = ref([
     icon: 'pi pi-home',
     items: [
       {
-        label: 'ห้องนอน 11',
+        label: 'ห้องนอน 1',
         icon: 'pi pi-chevron-right',
         command: () => movetoRoom1()
       },
       {
         label: 'ห้องนอน 2',
         icon: 'pi pi-chevron-right',
-        command: () => movetoRoom1()
+        command: () => movetoRoom2()
       },
     ]
   },

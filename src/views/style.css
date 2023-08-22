@@ -1,22 +1,25 @@
 img {
     vertical-align: middle;
 }
-.contentmaps{
-    background-color: rgb(199, 199, 199); 
+
+.contentmaps {
+    background-color: rgb(199, 199, 199);
     height: 100vh;
 }
-.Maps{
+
+.Maps {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Maps iframe{
+
+.Maps iframe {
     border-radius: 10px;
     width: 90%;
     height: 80vh;
 }
 
-.Contracticon{
+.Contracticon {
     opacity: 0.9;
     border-radius: 10px;
     position: fixed;
@@ -27,12 +30,13 @@ img {
     height: 8rem;
 }
 
-.phone{
+.phone {
     position: fixed;
     right: 0.5rem;
     bottom: 15rem;
 }
-.line{
+
+.line {
     position: fixed;
     right: 0.5rem;
     bottom: 18.5rem;
@@ -46,24 +50,29 @@ img {
     animation-name: example;
     animation-duration: 2s;
 }
-.el1{
+
+.el1 {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-color: rgb(199, 199, 199); 
-    margin-top:-1.4rem;
+    background-color: rgb(199, 199, 199);
+    margin-top: -1.4rem;
 }
-.set1{
-    margin-left: -27.5rem;
-    margin-top: 2rem;
+
+.set1 {
+    width: 50%;
+    margin-left: 5rem;
+    margin-top: 5rem;
 }
-.textinformation{
+
+.textinformation {
     position: absolute;
     right: 25rem;
-    top:3.5rem;
+    top: 6rem;
 }
-.textstyle h1{
-    top: 0.2rem;
+
+.textstyle h1 {
+    top: 2.5rem;
     position: absolute;
     left: 5rem;
 }
@@ -101,26 +110,49 @@ img {
 @media screen and (max-width:450px) {
     .Maps {
         position: absolute;
-        left:1.5rem;
+        left: 1.5rem;
         border-radius: 10px;
         width: 85%;
         height: inherit;
     }
+
     .textstyle {
         font-size: 0.5rem;
     }
-    
+
 }
+
 @media screen and (max-width:415px) {
-    .el1{
+   
+    .set1 {
+        width: 49%;
+        margin-left: 2rem;
+        margin-top: -1rem;
+    }
+
+    .textinformation {
+        position: absolute;
+        right: 3rem;
+        top: 4rem;
+    }
+
+    .el1 {
+        position: relative;
         margin: 0;
         height: 30vh;
     }
-    
-    .contentmaps{
+
+    .textstyle h1 {
+        top: 2rem;
+        position: absolute;
+        left: 15rem;
+    }
+
+    .contentmaps {
         height: 50vh;
     }
-    .Maps iframe{
+
+    .Maps iframe {
         position: absolute;
         top: 1rem;
         left: 1.5rem;

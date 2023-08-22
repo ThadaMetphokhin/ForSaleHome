@@ -1,0 +1,256 @@
+.elm1 {
+    position: relative;
+    height: 100vh;
+    background-color: rgb(43, 44, 50, 1);
+}
+
+.elm1>p {
+    top:2rem;
+    position: absolute;
+    left: 4rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.elm1 .reveal {
+    top: 3rem;
+    right: -40rem;
+}
+
+.elm1>.textinformation1 {
+    top: 7rem;
+    left: 4.2rem;
+    color: #fff;
+    position: absolute;
+}
+
+.elm2 {
+    position: relative;
+    height: 110vh;
+    background-color: rgb(199, 199, 199);
+}
+
+.elm2>p {
+    top:2rem;
+    position: absolute;
+    left: 4rem;
+    color: #0f0f0f;
+    font-size: 2rem;
+}
+
+.elm2 .reveal {
+    top: 6rem;
+    left: 4rem;
+}
+
+.elm2>.textinformation2 {
+    top: 7rem;
+    right: 27rem;
+    color: #030303;
+    position: absolute;
+}
+.elm3 {
+    position: relative;
+    height: 120vh;
+    background-color: rgb(43, 44, 50, 1);
+}
+
+.elm3>p {
+    top:2rem;
+    position: absolute;
+    left: 4rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.elm3 .reveal {
+    top: 3rem;
+    right: -40rem;
+}
+
+.elm3>.textinformation3 {
+    top: 7rem;
+    left: 4.2rem;
+    color: #fff;
+    position: absolute;
+}
+.elm4 {
+    position: relative;
+    height: 120vh;
+    background-color: rgb(199, 199, 199);
+}
+
+.elm4>p {
+    top:2rem;
+    position: absolute;
+    left: 4rem;
+    color: #0f0f0f;
+    font-size: 2rem;
+}
+
+.elm4 .reveal {
+    top: 6rem;
+    left: 4rem;
+}
+
+.elm4>.textinformation4 {
+    top: 7rem;
+    right: 27rem;
+    color: #030303;
+    position: absolute;
+}
+.elm5 {
+    position: relative;
+    height: 100vh;
+    background-color: rgb(43, 44, 50, 1);
+}
+
+.elm5>p {
+    top:2rem;
+    position: absolute;
+    left: 4rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.elm5 .reveal {
+    top: 3rem;
+    right: -40rem;
+}
+
+.elm5>.textinformation5 {
+    top: 7rem;
+    left: 4.2rem;
+    color: #fff;
+    position: absolute;
+}
+
+@media screen and (max-width:415px) {
+    .elm1 {
+        position: relative;
+        height: 55vh;
+        background-color: rgb(43, 44, 50, 1);
+    }
+    
+    .elm1>p {
+        top:0rem;
+        position: absolute;
+        left: 9rem;
+        color: #fff;
+        font-size: 2rem;
+    }
+    
+    .elm1 .reveal {
+        top: 12rem;
+        left: -2rem;
+    }
+    
+    .elm1>.textinformation1 {
+        top: 5rem;
+        left: 4.2rem;
+        color: #fff;
+        position: absolute;
+    }
+    
+    .elm2 {
+        position: relative;
+        height: 70vh;
+        background-color: rgb(199, 199, 199);
+    }
+    
+    .elm2> p {
+        top:0rem;
+        position: absolute;
+        left: 9rem;
+        color: #0f0f0f;
+        font-size: 2rem;
+    }
+    
+    .elm2 .reveal {
+        top: 13rem;
+        left: 0rem;
+    }
+    
+    .elm2>.textinformation2 {
+        width: 8rem;
+        top: 7rem;
+        left: 2rem;
+        color: #030303;
+        position: absolute;
+    }
+    .elm3 {
+        position: relative;
+        height: 80vh;
+        background-color: rgb(43, 44, 50, 1);
+    }
+    
+    .elm3>p {
+        top:2rem;
+        position: absolute;
+        left: 6rem;
+        color: #fff;
+        font-size: 2rem;
+    }
+    
+    .elm3 .reveal {
+        top: 15rem;
+        left: 0rem;
+    }
+    
+    .elm3>.textinformation3 {
+        top: 7rem;
+        left: 4.2rem;
+        color: #fff;
+        position: absolute;
+    }
+    .elm4 {
+        position: relative;
+        height: 80vh;
+        background-color: rgb(199, 199, 199);
+    }
+    
+    .elm4>p {
+        top:2rem;
+        position: absolute;
+        left: 4rem;
+        color: #0f0f0f;
+        font-size: 2rem;
+    }
+    
+    .elm4 .reveal {
+        top: 13rem;
+        left: -2rem;
+    }
+    .elm4>.textinformation4 {
+        width: 8rem;
+        top: 7rem;
+        left: 2rem;
+        color: #030303;
+        position: absolute;
+    }
+    .elm5 {
+        position: relative;
+        height: 70vh;
+        background-color: rgb(43, 44, 50, 1);
+    }
+    
+    .elm5>p {
+        top:2rem;
+        position: absolute;
+        left: 9rem;
+        color: #fff;
+        font-size: 2rem;
+    }
+    
+    .elm5 .reveal {
+        top: 13rem;
+        left: -1rem;
+    }
+    
+    .elm5>.textinformation5 {
+        top: 7rem;
+        left: 4.2rem;
+        color: #fff;
+        position: absolute;
+    }
+}
