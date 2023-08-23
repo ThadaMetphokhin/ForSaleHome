@@ -35,9 +35,6 @@ import { ref } from 'vue'
 
 
 import Button from 'primevue/button';
-import { useDark, useToggle } from "@vueuse/core";
-const isDark = useDark();
-const toggleDark = useToggle(isDark);
 import {
   movetoFronthome,
   movetoRoom1,
