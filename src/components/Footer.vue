@@ -20,9 +20,8 @@
     left: 30rem;
 }
 
-@media screen and (max-width:415px){
+@media screen and (max-width:420px){
     .footer{
-        width: auto;
         bottom: -1.6rem;
     }
     .footer p{
