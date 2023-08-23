@@ -19,14 +19,7 @@
     position: absolute;
     left: 30rem;
 }
-@media screen and (max-width:450px){
-    .footer p{
-        top: 1.2rem;
-        position: absolute;
-        left:3rem;
-        font-size: 0.1rem;
-    }
-}
+
 @media screen and (max-width:415px){
     .footer{
         width: auto;
