@@ -9,7 +9,7 @@
     </Menubar>
   </div>
 </template>
-<style>
+<style scoped>
 
 span.p-menuitem-text {
   font-family: 'Kodchasan', sans-serif;
