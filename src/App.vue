@@ -15,14 +15,8 @@ body{
   background-color: rgb(199, 199, 199);
   font-family: 'Kodchasan', sans-serif;
 }
-.dark body {
-  background: #16171d; 
-  color: #fff;
-  
-}
-.dark h1 p{
-  color:white;
-} 
+
+
 
 </style>
 
