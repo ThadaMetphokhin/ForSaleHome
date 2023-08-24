@@ -3,8 +3,19 @@ img {
 }
 
 .contentmaps {
+    position: relative;
     background-color: rgb(199, 199, 199);
     height: 100vh;
+}
+
+.contentmaps .el {
+    position: absolute;
+    top: 7rem;
+    left: 12rem;
+}
+
+.contentmaps .el .text {
+    font-size: 2rem;
 }
 
 .Maps {
@@ -15,8 +26,8 @@ img {
 
 .Maps iframe {
     border-radius: 10px;
-    width: 90%;
-    height: 80vh;
+    width: 150vh;
+    height: 60vh;
 }
 
 .Contracticon {
@@ -123,7 +134,31 @@ img {
 }
 
 @media screen and (max-width:415px) {
-   
+    .contentmaps {
+        position: relative;
+        background-color: rgb(199, 199, 199);
+        height: 100vh;
+    }
+
+    .contentmaps .el {
+        position: absolute;
+        top: 0rem;
+        left: 0rem;
+    }
+
+    .contentmaps .el .text {
+        font-size: 1.5rem;
+    }
+
+    .Maps iframe {
+        position: absolute;
+        top: 0rem;
+        left: 0.1rem;
+        border-radius: 10px;
+        width: 40vh;
+        height: 40vh;
+    }
+
     .set1 {
         width: 49%;
         margin-left: 2rem;
@@ -152,12 +187,5 @@ img {
         height: 50vh;
     }
 
-    .Maps iframe {
-        position: absolute;
-        top: 1rem;
-        left: 1.5rem;
-        border-radius: 10px;
-        width: 90%;
-        height: 40vh;
-    }
+
 }

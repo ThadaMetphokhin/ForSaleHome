@@ -5,18 +5,15 @@ import Content from './views/Content.vue'
 </script>
 
 <template>
-  <Content ></Content>
+  <Content></Content>
 </template>
 <style >
 @import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@300&display=swap');
 
-body{
+body {
   margin: 0;
   background-color: rgb(199, 199, 199);
   font-family: 'Kodchasan', sans-serif;
 }
-
-
-
 </style>
 

@@ -1,40 +1,25 @@
 <template>
-  <div class="card relative z-2 Navbar">
-    <Menubar :model="items">
-      <template #start>
-        <img alt="logo" src="/public/for-sale.png" height="40" class="mr-2" />
-      </template>
-      
-
-    </Menubar>
+  <div class="topnav" id="myTopnav">
+    <a href="/" class="brand"><img src="../assets/iconweb/rent.png" /></a>
+    <a class="button" @click="movetoFronthome()">{{ $t("Navbar.menu1") }}</a>
+    <a class="button" @click="movetoRoom1()">{{ $t("Navbar.menu2.title") }}</a>
+    <a class="button" @click="movetoCenterhome()">{{ $t("Navbar.menu3") }}</a>
+    <a class="button" @click="movetoBathRoominhome()">{{ $t("Navbar.menu4") }}</a>
+    <a class="button" @click="movetoCookingRoom()">{{ $t("Navbar.menu5") }}</a>
+    <a class="button" @click="movetoMaps()">{{ $t("Navbar.menu6") }}</a>
+    <a href="javascript:void(0);" class="icon" @click="myFunction()">
+      <fa icon="fa-solid fa-bars" />
+    </a>
+    <select v-model="$i18n.locale">
+      <option v-for="(lang,i) in langs" :key="`Lang${i}`" :value="lang">{{ lang }}</option>
+    </select>
   </div>
 </template>
 <style scoped>
-
-span.p-menuitem-text {
-  font-family: 'Kodchasan', sans-serif;
-  font-weight: bold;
-}
-
-div.p-menubar {
-  border-radius: 0px;
-  opacity: 0.91;
-}
-
-
-
-a.p-menubar-button {
-  right: 1rem;
-  position: fixed;
-}
+@import url('./css/Navbar.css');
 </style>
 <script setup lang="ts">
-import { defineComponent } from 'vue';
-import Menubar from 'primevue/menubar';
-import { ref } from 'vue'
 
-
-import Button from 'primevue/button';
 import {
   movetoFronthome,
   movetoRoom1,
@@ -45,55 +30,25 @@ import {
   movetoMaps
 } from '../views/Content.vue'
 
+const langs = ['TH','EN']
 
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x?.classList.value === "topnav") {
+    x?.classList.add("responsive");
+  } else {
+    x?.classList.remove("responsive");
+  }
 
+}
+window.onclick = function (event) {
 
+  if ((event.target as HTMLInputElement).matches('.button')) {
+    var x = document.getElementById("myTopnav");
+    x?.classList.remove('responsive')
+  }
+}
 
-
-const items = ref([
-  {
-    label: 'หน้าบ้าน',
-    icon: 'pi pi-home',
-    command: () => movetoFronthome()
-  },
-  {
-    label: 'ห้องนอน',
-    icon: 'pi pi-home',
-    items: [
-      {
-        label: 'ห้องนอน 1',
-        icon: 'pi pi-chevron-right',
-        command: () => movetoRoom1()
-      },
-      {
-        label: 'ห้องนอน 2',
-        icon: 'pi pi-chevron-right',
-        command: () => movetoRoom2()
-      },
-    ]
-  },
-  {
-    label: 'โถงกลางบ้าน',
-    icon: 'pi pi-home',
-    command: () => movetoCenterhome()
-  },
-  {
-    label: 'ห้องน้ำในตัวบ้าน',
-    icon: 'pi pi-home',
-    command: () => movetoBathRoominhome()
-  },
-  {
-    label: 'ห้องครัว',
-    icon: 'pi pi-home',
-    command: () => movetoCookingRoom()
-  },
-  {
-    label: 'แผนที่',
-    icon: 'pi  pi-map',
-    command: () => movetoMaps()
-  },
-
-]);
 
 
 </script>
