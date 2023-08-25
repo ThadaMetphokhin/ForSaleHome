@@ -161,13 +161,13 @@ img {
 
     .set1 {
         width: 49%;
-        margin-left: 2rem;
+        margin-left: 1rem;
         margin-top: -1rem;
     }
 
     .textinformation {
         position: absolute;
-        right: 3rem;
+        right: 0.5rem;
         top: 4rem;
     }
 

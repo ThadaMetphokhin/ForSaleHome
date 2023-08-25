@@ -118,13 +118,13 @@
         font-size: 2rem;
         font-weight: bold;
         text-align: center;
-        width: 18rem;
+        width: 21rem;
         border-radius: 1rem;
         color: black;
         background-color: rgb(255, 255, 135);
         position: absolute;
         top: 15rem;
-        left: -3rem;
+        left:-5.5rem;
     }
     
 }

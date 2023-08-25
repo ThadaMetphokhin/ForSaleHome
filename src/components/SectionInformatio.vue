@@ -1,6 +1,6 @@
 <template>
     <div class="elm1" id="Room1">
-        <p class="topic1">{{ $t("Navbar.menu2.title") }}</p>
+        <p class="topic1">{{ $t("Navbar.menu2.room1") }}</p>
         <div class="textinformation1">
             <p>{{$t("SectionInfor.Topic2.topic2")}}</p>
             <ul>
@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="elm2" id="Room2">
-        <p class="topic2">ห้องนอน 2</p>
+        <p class="topic2">{{ $t("Navbar.menu2.room2") }}</p>
         <div class="textinformation2">
             <p>{{$t("SectionInfor.Topic3.topic3")}}</p>
             <ul>
