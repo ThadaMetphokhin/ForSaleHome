@@ -10,15 +10,23 @@
     <a href="javascript:void(0);" class="icon" @click="myFunction()">
       <fa icon="fa-solid fa-bars" />
     </a>
-    <select v-model="$i18n.locale">
-      <option v-for="(lang,i) in langs" :key="`Lang${i}`" :value="lang">{{ lang }}</option>
-    </select>
+    <div class="changlangDesk">
+      <a-space>
+        <a-select ref="select" v-model:value="$i18n.locale" style="width: 60px">
+          <a-select-option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">{{ lang }}</a-select-option>
+        </a-select>
+      </a-space>
+    </div>
+
   </div>
+  
 </template>
 <style scoped>
 @import url('./css/Navbar.css');
 </style>
 <script setup lang="ts">
+
+
 
 import {
   movetoFronthome,
@@ -30,7 +38,7 @@ import {
   movetoMaps
 } from '../views/Content.vue'
 
-const langs = ['TH','EN']
+const langs = ['TH', 'EN']
 
 function myFunction() {
   var x = document.getElementById("myTopnav");
