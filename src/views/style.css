@@ -118,26 +118,6 @@ img {
 
 
 @media only screen and (min-width:375px){
-    .Contracticon{
-        
-    }
-}
-@media screen and (max-width:450px) {
-    .Maps {
-        position: absolute;
-        left: 1.5rem;
-        border-radius: 10px;
-        width: 85%;
-        height: inherit;
-    }
-
-    .textstyle {
-        font-size: 0.5rem;
-    }
-
-}
-
-@media only screen and (max-width:414px) {
     .contentmaps {
         position: relative;
         background-color: rgb(199, 199, 199);
@@ -147,17 +127,86 @@ img {
     .contentmaps .el {
         position: absolute;
         top: 0rem;
-        left: 0rem;
+        left: 1rem;
     }
 
     .contentmaps .el .text {
         font-size: 1.5rem;
     }
+    .Maps {
+        position: absolute;
+        left: 1.5rem;
+        border-radius: 10px;
+        width: 85%;
+        height: inherit;
+    }
+    .Maps iframe {
+        position: absolute;
+        top: 2rem;
+        left: -1rem;
+        border-radius: 10px;
+        width: 50vh;
+        height: 40vh;
+    }
 
+    .set1 {
+        width: 49%;
+        margin-left: 1rem;
+        margin-top: -1rem;
+    }
+
+    .textinformation {
+        position: absolute;
+        right: 0.5rem;
+        top: 4rem;
+    }
+
+    .el1 {
+        position: relative;
+        margin: 0;
+        height: 30vh;
+    }
+
+    .textstyle h1 {
+        top: 2rem;
+        position: absolute;
+        left: 15rem;
+    }
+
+    .contentmaps {
+        height: 70vh;
+    }
+
+}
+
+
+@media only screen and (min-width:414px) {
+    .contentmaps {
+        position: relative;
+        background-color: rgb(199, 199, 199);
+        height: 100vh;
+    }
+
+    .contentmaps .el {
+        position: absolute;
+        top: 0rem;
+        left: 1rem;
+    }
+
+    .contentmaps .el .text {
+        font-size: 1.5rem;
+    }
+    .Maps {
+        position: absolute;
+        left: 1.5rem;
+        border-radius: 10px;
+        width: 85%;
+        height: inherit;
+    }
     .Maps iframe {
         position: absolute;
         top: 0rem;
-        left: 0.1rem;
+        left: -1rem;
         border-radius: 10px;
         width: 40vh;
         height: 40vh;
