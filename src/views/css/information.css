@@ -10,6 +10,9 @@
     color: whitesmoke;
     font-size: 2rem;
 }
+.Information .item > ul{
+    list-style-type: square;
+}
 
 .Information .item{
     left: 40rem;
@@ -45,7 +48,10 @@
     left: -35rem;
 }
 
-@media screen and (max-width:450px) {
+@media only screen and (min-width:375px) {
+    .Information{
+        height: 50vh;
+    }
     .Information > p{
         top: 2rem;
         left: 1rem;
@@ -55,31 +61,92 @@
     }
     
     .Information .item{
-        left: 2.5rem;
+        left: 8rem;
         position: absolute;
         color: whitesmoke;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         top: 5rem;
     }
     
     .Information .item .iconroom{
         position: absolute;
         left: -2rem;
-        top: 1rem;
+        top: 0.7rem;
     }
     .Information .item .iconlocation{
         position: absolute;
         left: -1.9rem;
-        top: 5.6rem;
+        top: 4.7rem;
     }
     .Information .item .iconcar{
         position: absolute;
         left: -2rem;
-        top:11.5rem;
+        top:9.7rem;
+    }
+    .Information .item .bannerprice{
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        width: 16rem;
+        border-radius: 1rem;
+        color: black;
+        background-color: rgb(255, 255, 135);
+        position: absolute;
+        top: 12rem;
+        left:-4rem;
     }
     
 }
-@media screen and (max-width:415px) {
+@media only screen and (min-width:390px) {
+    .Information{
+        height: 50vh;
+    }
+    .Information > p{
+        top: 1rem;
+        left: 1rem;
+        position: absolute;
+        color: whitesmoke;
+        font-size: 1.5rem;
+    }
+    
+    .Information .item{
+        left: 8rem;
+        position: absolute;
+        color: whitesmoke;
+        font-size: 1rem;
+        top: 5rem;
+    }
+    
+    .Information .item .iconroom{
+        position: absolute;
+        left: -3rem;
+        top: 1rem;
+    }
+    .Information .item .iconlocation{
+        position: absolute;
+        left: -2.9rem;
+        top: 6.8rem;
+    }
+    .Information .item .iconcar{
+        position: absolute;
+        left: -3rem;
+        top:15rem;
+    }
+    .Information .item .bannerprice{
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        width: 16rem;
+        border-radius: 1rem;
+        color: black;
+        background-color: rgb(255, 255, 135);
+        position: absolute;
+        top: 18rem;
+        left:-4rem;
+    }
+    
+}
+@media only screen and (min-width:414px) {
     .Information{
         height: 50vh;
     }
@@ -128,3 +195,38 @@
     }
     
 }
+@media only screen and (min-width:450px) {
+    .Information > p{
+        top: 2rem;
+        left: 1rem;
+        position: absolute;
+        color: whitesmoke;
+        font-size: 1rem;
+    }
+    
+    .Information .item{
+        left: 2.5rem;
+        position: absolute;
+        color: whitesmoke;
+        font-size: 0.8rem;
+        top: 5rem;
+    }
+    
+    .Information .item .iconroom{
+        position: absolute;
+        left: -2rem;
+        top: 1rem;
+    }
+    .Information .item .iconlocation{
+        position: absolute;
+        left: -1.9rem;
+        top: 5.6rem;
+    }
+    .Information .item .iconcar{
+        position: absolute;
+        left: -2rem;
+        top:11.5rem;
+    }
+    
+}
+

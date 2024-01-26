@@ -19,8 +19,36 @@
     position: absolute;
     left: 30rem;
 }
+@media only screen and (min-width:375px) {
+    .footer p {
+        left: 5rem;
+        top: 0.8rem;
+        font-size: 0.5rem;
+    }
+}
+@media only screen and (min-width:390px) {
+    .footer p {
+        left: 4.5rem;
+        top: 0.8rem;
+        font-size: 0.6rem;
+    }
+}
+@media only screen and (min-width:412px) {
+    .footer p {
+        left: 5rem;
+        top: 0.8rem;
+        font-size: 0.6rem;
+    }
+}
+@media only screen and (min-width:414px) {
+    .footer p {
+        left: 5rem;
+        top: 0.8rem;
+        font-size: 0.6rem;
+    }
+}
 
-@media screen and (max-width:420px){
+@media only screen and (min-width:420px){
     .footer{
         bottom: -1.6rem;
     }
@@ -31,4 +59,5 @@
         font-size: 0.1rem;
     }
 }
+
 </style>

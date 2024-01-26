@@ -24,7 +24,7 @@
         <fa icon="fa-solid fa-house-user" style="color: #ffffff;" />
       </div>
       <p>{{ $t("Information.Topic.topic1") }}</p>
-      <ul style="list-style-type: none;">
+      <ul >
         <li>{{ $t("Information.textinformaiton.text1") }}</li>
         <li>{{ $t("Information.textinformaiton.text2") }}</li>
       </ul>
@@ -32,7 +32,7 @@
         <fa icon="fa-solid fa-location-dot" style="color: #ffffff;" />
       </div>
       <p>{{ $t("Information.Topic.topic2") }}</p>
-      <ul style="list-style-type: none;">
+      <ul >
         <li>{{ $t("Information.textinformaiton.text3") }}</li>
         <li>{{ $t("Information.textinformaiton.text4") }}</li>
         <li>{{ $t("Information.textinformaiton.text5") }}</li>
@@ -42,7 +42,7 @@
         <fa icon="fa-solid fa-car-side" style="color: #ffffff;" />
       </div>
       <p>{{ $t("Information.Topic.topic3") }}</p>
-      <ul style="list-style-type: none;">
+      <ul >
         <li>{{ $t("Information.textinformaiton.text6") }}</li>
       </ul>
     </div>
