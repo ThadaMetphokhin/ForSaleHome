@@ -40,12 +40,13 @@
   filter: grayscale(0%);
 }
 
-@media screen and (max-width:400px) {
+@media only screen and (min-width:375px) {
   .ant-carousel :deep(.slick-thumb li) {
     width: 20px;
     height: 30px;
   }
 }
+
 @media screen and (max-width:415px) {
   .ant-carousel :deep(.slick-thumb){
     margin-right: -2rem;

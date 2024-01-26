@@ -79,7 +79,7 @@ const messages = {
                 text5: 'โลตัส โกเฟรช ซู เปอร์มาร์เก็ต จุน',
                 text6: '40 กิโลเมตร'
             },
-            price: 'ราคา 1.8 ล้านบาท'
+            price: 'ราคา 2.4 ล้านบาท'
         },
         SectionInfor: {
             Topic1: {
@@ -148,7 +148,7 @@ const messages = {
                 text5: 'Lotus Go Fresh Super Market Jun',
                 text6: '40 kilometor'
             },
-            price: 'price 1.8 million baht'
+            price: 'price 2.4 million baht'
         },
         SectionInfor: {
             Topic1: {

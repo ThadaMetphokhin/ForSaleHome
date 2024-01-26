@@ -117,7 +117,11 @@ img {
 
 
 
-
+@media only screen and (min-width:375px){
+    .Contracticon{
+        
+    }
+}
 @media screen and (max-width:450px) {
     .Maps {
         position: absolute;
@@ -133,7 +137,7 @@ img {
 
 }
 
-@media screen and (max-width:415px) {
+@media only screen and (max-width:414px) {
     .contentmaps {
         position: relative;
         background-color: rgb(199, 199, 199);
